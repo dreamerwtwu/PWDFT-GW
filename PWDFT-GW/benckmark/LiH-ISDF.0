@@ -1,0 +1,2696 @@
+mpirank = 0               
+mpisize = 16              
+Time for reading the raw input file is 0.000167102 [s]
+
+UPF_File is not defined. 
+Use the old format of pseudopotential by defininig PeriodTable in the input file.
+This option will become deprecated in the future
+
+*********************************************************************
+Common information
+*********************************************************************
+
+Super cell                           = +1.51185000e+01 +1.51185000e+01 +1.51185000e+01 
+Grid Wavefunction                    = 44              44              44              
+Grid Density                         = 88              88              88              
+Mixing dimension                     = 20              
+Mixing variable                      = potential       
+Mixing type                          = broyden         
+Mixing Steplength                    = +7.00000000e-01 
+Temperature                          = +0.00000000e+00 [K]   
+Extra states                         = 61              
+Smearing scheme                      = FD              
+PeriodTable File                     = LiHHGH.bin      
+Pseudo Type                          = HGH             
+PW Solver                            = LOBPCG          
+XC Type                              = XC_LDA_XC_TETER93
+SCF Outer Tol                        = +1.00000000e-06 
+SCF Outer MaxIter                    = 100             
+SCF Free Energy Per Atom Tol         = +1.00000000e-04 
+Eig Min Tolerence                    = +1.00000000e-09 
+Eig Tolerence                        = +1.00000000e-07 
+Eig MaxIter                          = 10              
+Eig Tolerance Dyn                    = false   
+Num unused state                     = 0               
+EcutWavefunction                     = +4.00000000e+01 
+Density GridFactor                   = +2.00000000e+00 
+Use Atom Density                     = false   
+Use VLocal                           = false   
+RestartDensity                       = false   
+RestartWfn                           = false   
+OutputDensity                        = false   
+OutputPotential                      = false   
+Number of Extra Electron             = 0               
+
+*********************************************************************
+PWDFT information
+*********************************************************************
+
+SCF Phi MaxIter                      = 10              
+SCF Phi Tol                          = +1.00000000e-06 
+Hybrid ACE                           = true    
+Hybrid DF                            = false   
+Hybrid Active Init                   = false   
+Hybrid Mixing Type                   = nested          
+Hybrid DF Num Mu                     = +6.00000000e+00 
+Hybrid DF Num GaussianRandom         = +2.00000000e+00 
+Hybrid DF Tolerance                  = +1.00000000e-20 
+EXX div type                         = 1               
+
+*********************************************************************
+PWDFT GW
+*********************************************************************
+
+GW                                   = true    
+BSE                                  = false   
+Nv_oper                              = 32              
+Nc_oper                              = 61              
+Nv_ener                              = 32              
+Nc_ener                              = 61              
+Frequency_Dependence                 = COHSEX          
+Coulomb_Screen                       = Semiconductor   
+Write_Vcoul                          = false   
+Use Isdf                             = true    
+Isrestart                            = false   
+Isdf_method                          = Kmeans          
+Iscauchy                             = false   
+Vcrank_ratio                         = 12              
+Vsrank_ratio                         = 12              
+Ssrank_ratio                         = 12              
+Maxiterkmeans_GW_ISDF                = 1000            
+Tolerancekmeans_GW_ISDF              = +1.00000000e-05 
+
+XC_LDA_XC_TETER93  XCId = 20
+
+Computing the local pseudopotential
+Time for iterCharge        = 4  timeCharge        = 0.019219831
+Time for CalculatePseudoCharge  = 0.019332275
+Time for CalculatePseudoCharge comm  = 1.2398794
+Time for no Vlocal pseudopotential 1.8114683
+Sum of Pseudocharge                          = +6.40000003e+01 
+Number of Occupied States                    = 32              
+After adjustment, Sum of Pseudocharge        = +6.40000000e+01 
+Computing the non-local pseudopotential
+Time for iterNonlocal        = 4  timeNonlocal        = 0.013265662
+Time for CalculateNonlocalPP  = 0.013265871
+Total number of nonlocal pseudopotential = 128             
+Time for CalculateNonlocalPP comm = 6.8896537
+Time for nonlocal pseudopotential 6.9029684
+Time for calculating the pseudopotential for the Hamiltonian = 8.7196662 [s]
+Spinor setup finished.
+Eigensolver setup finished .
+Generating initial density through linear combination of pseudocharges.
+Initial density. Sum of density      = +1.17659398e+02 
+Rescaled density. Sum of density      = +6.40000000e+01 
+SCF setup finished .
+ 
+Time for computing total xc energy in XC is 0.0026094839 [s]
+
+
+*********************************************************************
+Starting regular SCF iteration.
+*********************************************************************
+
+
+*********************************************************************
+SCF iteration # 1
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023349687
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23359483
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2386491
+Time for iterOther        = 1  timeOther        = 0.092828803
+Time for psi.AddMultSpinorFineR2C is 4.5884822 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023956664
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2350486
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2081565
+Time for iterOther        = 1  timeOther        = 0.09579926
+Time for psi.AddMultSpinorFineR2C is 4.5630206 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022008292
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23676328
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1986172
+Time for iterOther        = 1  timeOther        = 0.089197703
+Time for psi.AddMultSpinorFineR2C is 4.5466425 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02214627
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23628894
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1995137
+Time for iterOther        = 1  timeOther        = 0.089963786
+Time for psi.AddMultSpinorFineR2C is 4.5479717 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023039989
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23541193
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2161043
+Time for iterOther        = 1  timeOther        = 0.092807047
+Time for psi.AddMultSpinorFineR2C is 4.5674211 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02410651
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23386723
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2078167
+Time for iterOther        = 1  timeOther        = 0.090904802
+Time for psi.AddMultSpinorFineR2C is 4.556748 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023562357
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23378751
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2130006
+Time for iterOther        = 1  timeOther        = 0.09240716
+Time for psi.AddMultSpinorFineR2C is 4.5628093 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024015971
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23296736
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2059234
+Time for iterOther        = 1  timeOther        = 0.093046479
+Time for psi.AddMultSpinorFineR2C is 4.5560194 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023044251
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2343431
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2004519
+Time for iterOther        = 1  timeOther        = 0.092202008
+Time for psi.AddMultSpinorFineR2C is 4.5501069 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023232788
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23368216
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2035246
+Time for iterOther        = 1  timeOther        = 0.090230666
+Time for psi.AddMultSpinorFineR2C is 4.5507222 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023774549
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2329744
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2026726
+Time for iterOther        = 1  timeOther        = 0.0918345
+Time for psi.AddMultSpinorFineR2C is 4.5513081 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02319169
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23509548
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2082197
+Time for iterOther        = 1  timeOther        = 0.089205049
+Time for psi.AddMultSpinorFineR2C is 4.5557681 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022363186
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23447113
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2079829
+Time for iterOther        = 1  timeOther        = 0.089911729
+Time for psi.AddMultSpinorFineR2C is 4.5547836 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024286218
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2331183
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2081322
+Time for iterOther        = 1  timeOther        = 0.092356555
+Time for psi.AddMultSpinorFineR2C is 4.5579489 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023845285
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2346473
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2069272
+Time for iterOther        = 1  timeOther        = 0.092223175
+Time for psi.AddMultSpinorFineR2C is 4.5576944 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023506619
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23553519
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2082679
+Time for iterOther        = 1  timeOther        = 0.090647064
+Time for psi.AddMultSpinorFineR2C is 4.5580102 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023840286
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23464203
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2020987
+Time for iterOther        = 1  timeOther        = 0.093490019
+Time for psi.AddMultSpinorFineR2C is 4.5541391 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023047112
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23460691
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2007137
+Time for iterOther        = 1  timeOther        = 0.091666929
+Time for psi.AddMultSpinorFineR2C is 4.5500911 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024002194
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23471226
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2046912
+Time for iterOther        = 1  timeOther        = 0.091462553
+Time for psi.AddMultSpinorFineR2C is 4.5549259 [s]
+
+
+After 18 iterations, LOBPCG did not converge. 
+The maximum norm of the residual is 0.0012802956
+
+The minimum norm of the residual is 5.9625375e-10
+
+Time for iterGemmT     = 211  timeGemmT     = 0.81790519
+Time for iterGemmN     = 125  timeGemmN     = 0.43456815
+Time for iterAllreduce = 211  timeAllreduce = 0.075537167
+Time for iterAlltoallv = 58  timeAlltoallv = 1.2064203
+Time for iterSpinor    = 37  timeSpinor    = 87.008715
+Time for iterTrsm      = 1  timeTrsm      = 0.0031714141
+Time for iterMpirank0  = 128  timeMpirank0  = 0.42559906
+
+Time for the eigensolver is 90.30168 [s]
+
+Time for ham.EigVal() in PWDFT is 1.9818544e-06 [s]
+
+Time for computing occupation rate in PWDFT is 1.3679266e-05 [s]
+
+Raw data, sum of density          = 63.999988
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31342858 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0026004687 [s]
+
+Time for computing XC potential in PWDFT is 0.048601449 [s]
+
+Time for computing Hartree potential in PWDFT is 0.091233388 [s]
+
+Time for computing total potential in PWDFT is 0.0060030743 [s]
+
+Time for computing energy in PWDFT is 0.008686088 [s]
+
+band#    = 0    eigval   = +4.15152023e-02 resval   = +5.96253754e-10 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = +1.04399388e-01 resval   = +4.58566018e-09 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = +1.04399388e-01 resval   = +3.91612481e-09 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = +1.04399388e-01 resval   = +4.21801832e-09 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = +1.04399388e-01 resval   = +5.76294858e-09 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = +1.04399388e-01 resval   = +3.85640403e-09 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = +1.04399388e-01 resval   = +3.52940971e-09 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = +1.62057929e-01 resval   = +2.39620232e-09 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = +1.62057929e-01 resval   = +3.16208487e-09 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = +1.62057929e-01 resval   = +1.58762899e-09 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = +1.62057929e-01 resval   = +4.11735906e-09 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = +1.62057929e-01 resval   = +2.13668252e-09 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = +1.62057929e-01 resval   = +2.37667330e-09 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = +1.62057929e-01 resval   = +2.20313969e-09 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = +1.62057929e-01 resval   = +2.89355649e-09 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = +1.62057929e-01 resval   = +1.83010305e-09 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = +1.62057929e-01 resval   = +2.49226227e-09 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = +1.62057929e-01 resval   = +2.66639270e-09 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = +1.62057929e-01 resval   = +2.03304317e-09 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = +1.71672934e-01 resval   = +2.40359543e-09 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = +1.71672934e-01 resval   = +2.12880204e-09 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = +1.71672934e-01 resval   = +2.11418625e-09 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = +1.71672934e-01 resval   = +1.98382330e-09 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +2.97027961e-01 resval   = +1.98009446e-09 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +2.97027961e-01 resval   = +2.16978181e-09 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +2.97027961e-01 resval   = +1.92792673e-09 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.11071664e-01 resval   = +1.71790904e-09 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.11071664e-01 resval   = +1.27447887e-09 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.11071664e-01 resval   = +2.13559768e-09 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +3.11071664e-01 resval   = +1.72706440e-09 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +3.11071664e-01 resval   = +3.73786387e-09 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +3.11071664e-01 resval   = +3.41916266e-09 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +3.24170426e-01 resval   = +3.78568182e-09 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +3.24170426e-01 resval   = +3.44529608e-09 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +3.24170426e-01 resval   = +4.64886341e-09 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +3.70690703e-01 resval   = +1.60054480e-09 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +3.70690703e-01 resval   = +1.92641507e-09 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +3.70690703e-01 resval   = +2.37058701e-09 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +3.70690703e-01 resval   = +1.71105298e-09 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +3.83647912e-01 resval   = +2.31605550e-09 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +3.83647912e-01 resval   = +2.34082132e-09 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +3.83647912e-01 resval   = +1.72537560e-09 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +3.83647912e-01 resval   = +2.41505639e-09 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +3.83647912e-01 resval   = +1.86407171e-09 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +3.83647912e-01 resval   = +2.10263172e-09 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +3.83647912e-01 resval   = +1.82277149e-09 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +3.83647912e-01 resval   = +2.06918721e-09 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +3.83647912e-01 resval   = +1.71169583e-09 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +3.83647912e-01 resval   = +1.61975795e-09 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +3.83647912e-01 resval   = +2.25690382e-09 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +3.83647912e-01 resval   = +1.65381063e-09 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +4.70046578e-01 resval   = +3.00895923e-09 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +4.70046578e-01 resval   = +2.78734744e-09 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +4.70046578e-01 resval   = +1.60056784e-09 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +4.70046578e-01 resval   = +2.53914674e-09 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +4.70046578e-01 resval   = +2.88507092e-09 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +4.70046578e-01 resval   = +1.72482736e-09 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +4.70046578e-01 resval   = +3.22564835e-09 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +4.70046578e-01 resval   = +4.08867560e-09 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +4.70046578e-01 resval   = +1.68639548e-09 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +4.70046578e-01 resval   = +2.43251419e-09 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +4.70046578e-01 resval   = +2.14715497e-09 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +4.70046578e-01 resval   = +3.23244754e-09 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +5.56750321e-01 resval   = +1.54458993e-08 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +5.56750321e-01 resval   = +9.86926862e-09 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +5.56750321e-01 resval   = +9.26030193e-09 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +5.56750321e-01 resval   = +8.61845287e-09 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +5.56750321e-01 resval   = +9.29992753e-09 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +5.56750321e-01 resval   = +9.66117230e-09 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +5.56750321e-01 resval   = +5.61796506e-09 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +5.56750321e-01 resval   = +8.69739977e-09 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +5.56750321e-01 resval   = +8.20829055e-09 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +5.56750321e-01 resval   = +7.74729222e-09 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +5.56750321e-01 resval   = +7.73665019e-09 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +5.56750321e-01 resval   = +5.15151889e-09 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +6.19050260e-01 resval   = +1.07414351e-07 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +6.19050260e-01 resval   = +2.29727559e-07 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +6.19050260e-01 resval   = +4.51782107e-07 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +6.19050260e-01 resval   = +7.88548861e-07 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +6.19050260e-01 resval   = +1.65539177e-06 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +6.19050260e-01 resval   = +1.84253896e-06 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +6.54893817e-01 resval   = +6.74094752e-06 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +6.54893817e-01 resval   = +6.63964243e-06 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +6.54893817e-01 resval   = +1.14525638e-05 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +6.54893817e-01 resval   = +1.90330163e-05 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +6.54893818e-01 resval   = +3.04734867e-05 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +6.54893826e-01 resval   = +1.08310270e-04 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +6.69927309e-01 resval   = +4.19835205e-05 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +6.69927404e-01 resval   = +3.99818676e-04 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +6.69929866e-01 resval   = +1.28029562e-03 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +6.73803266e-01 resval   = +4.81444984e-05 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +6.73803270e-01 resval   = +1.00854383e-04 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +6.73803282e-01 resval   = +1.82113498e-04 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -1.04385132e+01 [au]  
+Efree             = -1.04385132e+01 [au]  
+EfreeHarris       = -4.61930790e+01 [au]  
+Ekin              = +1.21136246e+01 [au]  
+Ehart             = -1.41924104e+02 [au]  
+EVxc              = -2.07364314e+01 [au]  
+Exc               = -1.59222520e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.25521378e+01 [au]  
+Fermi             = +3.17621045e-01 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +8.46469081e+00 [eV]  
+LUMO              = +8.82112627e+00 [eV]  
+norm(out-in)/norm(in) = +8.09509002e-01 
+Efree diff per atom   = +5.58665090e-01 
+Time for computing potential mixing in PWDFT is 0.19673477 [s]
+
+Total wall clock time for this SCF iteration = 90.977231 [s]
+
+*********************************************************************
+SCF iteration # 2
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024408624
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23307928
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2059147
+Time for iterOther        = 1  timeOther        = 0.092819251
+Time for psi.AddMultSpinorFineR2C is 4.5562725 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022910669
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23485016
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2062734
+Time for iterOther        = 1  timeOther        = 0.090284444
+Time for psi.AddMultSpinorFineR2C is 4.5543716 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021631189
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23593525
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2045797
+Time for iterOther        = 1  timeOther        = 0.089985505
+Time for psi.AddMultSpinorFineR2C is 4.5521863 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02209568
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23585278
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2107335
+Time for iterOther        = 1  timeOther        = 0.088739552
+Time for psi.AddMultSpinorFineR2C is 4.5574735 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02203171
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2379622
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1971681
+Time for iterOther        = 1  timeOther        = 0.089140438
+Time for psi.AddMultSpinorFineR2C is 4.5463564 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022916198
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23531985
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2070973
+Time for iterOther        = 1  timeOther        = 0.092451893
+Time for psi.AddMultSpinorFineR2C is 4.5578477 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023314528
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2349356
+Time for iterNonlocal     = 6  timeNonlocal     = 4.208973
+Time for iterOther        = 1  timeOther        = 0.091513626
+Time for psi.AddMultSpinorFineR2C is 4.5587894 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024590984
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23281991
+Time for iterNonlocal     = 6  timeNonlocal     = 4.204836
+Time for iterOther        = 1  timeOther        = 0.091768593
+Time for psi.AddMultSpinorFineR2C is 4.554083 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021692462
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23337579
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2009743
+Time for iterOther        = 1  timeOther        = 0.091638945
+Time for psi.AddMultSpinorFineR2C is 4.5477412 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024727695
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23237527
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2038716
+Time for iterOther        = 1  timeOther        = 0.092245512
+Time for psi.AddMultSpinorFineR2C is 4.5532798 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021775901
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23393598
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2016954
+Time for iterOther        = 1  timeOther        = 0.089101821
+Time for psi.AddMultSpinorFineR2C is 4.5465633 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023455098
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23353235
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2104759
+Time for iterOther        = 1  timeOther        = 0.089969993
+Time for psi.AddMultSpinorFineR2C is 4.5574875 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022417441
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23431633
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2012888
+Time for iterOther        = 1  timeOther        = 0.090359867
+Time for psi.AddMultSpinorFineR2C is 4.5484419 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02397947
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23418337
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2040092
+Time for iterOther        = 1  timeOther        = 0.090926915
+Time for psi.AddMultSpinorFineR2C is 4.553155 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022346765
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23607694
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2104344
+Time for iterOther        = 1  timeOther        = 0.089147963
+Time for psi.AddMultSpinorFineR2C is 4.5580625 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023663595
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23457031
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2066228
+Time for iterOther        = 1  timeOther        = 0.091132052
+Time for psi.AddMultSpinorFineR2C is 4.5560427 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023465909
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23353399
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2063689
+Time for iterOther        = 1  timeOther        = 0.093202949
+Time for psi.AddMultSpinorFineR2C is 4.5566275 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021845117
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23568045
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2097126
+Time for iterOther        = 1  timeOther        = 0.091672152
+Time for psi.AddMultSpinorFineR2C is 4.5589785 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023236461
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23528925
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1969664
+Time for iterOther        = 1  timeOther        = 0.09247645
+Time for psi.AddMultSpinorFineR2C is 4.5480344 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021879986
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23702578
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1950383
+Time for iterOther        = 1  timeOther        = 0.089583956
+Time for psi.AddMultSpinorFineR2C is 4.5435942 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023613378
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23439915
+Time for iterNonlocal     = 6  timeNonlocal     = 4.203386
+Time for iterOther        = 1  timeOther        = 0.09151189
+Time for psi.AddMultSpinorFineR2C is 4.5529649 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023968682
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23478226
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1994917
+Time for iterOther        = 1  timeOther        = 0.090616107
+Time for psi.AddMultSpinorFineR2C is 4.5489125 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023512825
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23461364
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2069511
+Time for iterOther        = 1  timeOther        = 0.091368549
+Time for psi.AddMultSpinorFineR2C is 4.5565001 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023011066
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23498809
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2085419
+Time for iterOther        = 1  timeOther        = 0.091292337
+Time for psi.AddMultSpinorFineR2C is 4.5578889 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023101538
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23370738
+Time for iterNonlocal     = 6  timeNonlocal     = 4.207712
+Time for iterOther        = 1  timeOther        = 0.091793753
+Time for psi.AddMultSpinorFineR2C is 4.5563687 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023019902
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23489852
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2049611
+Time for iterOther        = 1  timeOther        = 0.090535924
+Time for psi.AddMultSpinorFineR2C is 4.5534711 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021581955
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23591778
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2101603
+Time for iterOther        = 1  timeOther        = 0.089018404
+Time for psi.AddMultSpinorFineR2C is 4.5567315 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02216994
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23619283
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2037817
+Time for iterOther        = 1  timeOther        = 0.089247882
+Time for psi.AddMultSpinorFineR2C is 4.5514538 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022882268
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23403694
+Time for iterNonlocal     = 6  timeNonlocal     = 4.199574
+Time for iterOther        = 1  timeOther        = 0.092468366
+Time for psi.AddMultSpinorFineR2C is 4.5490157 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02316422
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23197301
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2010681
+Time for iterOther        = 1  timeOther        = 0.09044265
+Time for psi.AddMultSpinorFineR2C is 4.5467046 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024284691
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23323678
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2017287
+Time for iterOther        = 1  timeOther        = 0.092409931
+Time for psi.AddMultSpinorFineR2C is 4.5517159 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024558537
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23290076
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2037189
+Time for iterOther        = 1  timeOther        = 0.091683753
+Time for psi.AddMultSpinorFineR2C is 4.5529137 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024502508
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23459327
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2106942
+Time for iterOther        = 1  timeOther        = 0.091767587
+Time for psi.AddMultSpinorFineR2C is 4.5616094 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023219511
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23435723
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2048807
+Time for iterOther        = 1  timeOther        = 0.090592057
+Time for psi.AddMultSpinorFineR2C is 4.5531033 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023293823
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23678762
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2036122
+Time for iterOther        = 1  timeOther        = 0.090062968
+Time for psi.AddMultSpinorFineR2C is 4.5538121 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022897094
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23579755
+Time for iterNonlocal     = 6  timeNonlocal     = 4.201848
+Time for iterOther        = 1  timeOther        = 0.090987802
+Time for psi.AddMultSpinorFineR2C is 4.5515853 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023618095
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23441723
+Time for iterNonlocal     = 6  timeNonlocal     = 4.202114
+Time for iterOther        = 1  timeOther        = 0.091689661
+Time for psi.AddMultSpinorFineR2C is 4.5518969 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022693783
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23420314
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2039177
+Time for iterOther        = 1  timeOther        = 0.092199512
+Time for psi.AddMultSpinorFineR2C is 4.5530653 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022956103
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23443091
+Time for iterNonlocal     = 6  timeNonlocal     = 4.208974
+Time for iterOther        = 1  timeOther        = 0.093347557
+Time for psi.AddMultSpinorFineR2C is 4.559772 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023063675
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2334011
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1993988
+Time for iterOther        = 1  timeOther        = 0.094076611
+Time for psi.AddMultSpinorFineR2C is 4.5499972 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022181153
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23600394
+Time for iterNonlocal     = 6  timeNonlocal     = 4.199635
+Time for iterOther        = 1  timeOther        = 0.089820057
+Time for psi.AddMultSpinorFineR2C is 4.547698 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02306167
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23369004
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2042414
+Time for iterOther        = 1  timeOther        = 0.091291487
+Time for psi.AddMultSpinorFineR2C is 4.5523399 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022228785
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23554453
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2018015
+Time for iterOther        = 1  timeOther        = 0.088598907
+Time for psi.AddMultSpinorFineR2C is 4.5482299 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02242475
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23502912
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2078023
+Time for iterOther        = 1  timeOther        = 0.090254501
+Time for psi.AddMultSpinorFineR2C is 4.5555655 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022933722
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23497697
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2047831
+Time for iterOther        = 1  timeOther        = 0.09245652
+Time for psi.AddMultSpinorFineR2C is 4.5552054 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022763118
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23556259
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2073937
+Time for iterOther        = 1  timeOther        = 0.090750918
+Time for psi.AddMultSpinorFineR2C is 4.5565264 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023396298
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23329187
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2100322
+Time for iterOther        = 1  timeOther        = 0.091672845
+Time for psi.AddMultSpinorFineR2C is 4.5584551 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022700191
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23328263
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2078635
+Time for iterOther        = 1  timeOther        = 0.08983732
+Time for psi.AddMultSpinorFineR2C is 4.5537379 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022961214
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23407014
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2067399
+Time for iterOther        = 1  timeOther        = 0.090303652
+Time for psi.AddMultSpinorFineR2C is 4.5541429 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022509709
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23459515
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2038695
+Time for iterOther        = 1  timeOther        = 0.091590539
+Time for psi.AddMultSpinorFineR2C is 4.5526226 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022760756
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23610041
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2007695
+Time for iterOther        = 1  timeOther        = 0.08871533
+Time for psi.AddMultSpinorFineR2C is 4.5484047 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023086607
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23594873
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2005052
+Time for iterOther        = 1  timeOther        = 0.089022905
+Time for psi.AddMultSpinorFineR2C is 4.5486161 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023079291
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23560036
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2046491
+Time for iterOther        = 1  timeOther        = 0.091341846
+Time for psi.AddMultSpinorFineR2C is 4.5547229 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022536531
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23538781
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2068135
+Time for iterOther        = 1  timeOther        = 0.089896642
+Time for psi.AddMultSpinorFineR2C is 4.5546883 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023445733
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2336622
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2074034
+Time for iterOther        = 1  timeOther        = 0.091194324
+Time for psi.AddMultSpinorFineR2C is 4.5557597 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023317501
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23483839
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2106593
+Time for iterOther        = 1  timeOther        = 0.090358108
+Time for psi.AddMultSpinorFineR2C is 4.5592264 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021699727
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23550289
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2067263
+Time for iterOther        = 1  timeOther        = 0.089380331
+Time for psi.AddMultSpinorFineR2C is 4.5533652 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022708073
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23660304
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2074642
+Time for iterOther        = 1  timeOther        = 0.088449515
+Time for psi.AddMultSpinorFineR2C is 4.555278 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023046285
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23744599
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1998903
+Time for iterOther        = 1  timeOther        = 0.090124048
+Time for psi.AddMultSpinorFineR2C is 4.5505657 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023504198
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23507752
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2027005
+Time for iterOther        = 1  timeOther        = 0.093952961
+Time for psi.AddMultSpinorFineR2C is 4.5552874 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.025336862
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23104171
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1992055
+Time for iterOther        = 1  timeOther        = 0.09363389
+Time for psi.AddMultSpinorFineR2C is 4.5492812 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024381079
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23266456
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2011683
+Time for iterOther        = 1  timeOther        = 0.093535513
+Time for psi.AddMultSpinorFineR2C is 4.5518075 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023660094
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23278411
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2040233
+Time for iterOther        = 1  timeOther        = 0.091499761
+Time for psi.AddMultSpinorFineR2C is 4.5520241 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022133261
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23305868
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2083004
+Time for iterOther        = 1  timeOther        = 0.090655036
+Time for psi.AddMultSpinorFineR2C is 4.5542053 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022814848
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23485111
+Time for iterNonlocal     = 6  timeNonlocal     = 4.211581
+Time for iterOther        = 1  timeOther        = 0.088290535
+Time for psi.AddMultSpinorFineR2C is 4.5575941 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022476807
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23471092
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2057898
+Time for iterOther        = 1  timeOther        = 0.090637319
+Time for psi.AddMultSpinorFineR2C is 4.553668 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024109133
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23124969
+Time for iterNonlocal     = 6  timeNonlocal     = 4.200343
+Time for iterOther        = 1  timeOther        = 0.09557987
+Time for psi.AddMultSpinorFineR2C is 4.5513375 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023797303
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2357567
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2043223
+Time for iterOther        = 1  timeOther        = 0.090010293
+Time for psi.AddMultSpinorFineR2C is 4.5539402 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02350346
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23445915
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2070212
+Time for iterOther        = 1  timeOther        = 0.091305882
+Time for psi.AddMultSpinorFineR2C is 4.5563436 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023550257
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23381539
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2092316
+Time for iterOther        = 1  timeOther        = 0.095536165
+Time for psi.AddMultSpinorFineR2C is 4.5622018 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02325093
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23346771
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1997427
+Time for iterOther        = 1  timeOther        = 0.093536362
+Time for psi.AddMultSpinorFineR2C is 4.5500572 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021891572
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2373188
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1989333
+Time for iterOther        = 1  timeOther        = 0.089986309
+Time for psi.AddMultSpinorFineR2C is 4.5481901 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022581764
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23502788
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2055319
+Time for iterOther        = 1  timeOther        = 0.08983361
+Time for psi.AddMultSpinorFineR2C is 4.5530296 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024404198
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23438403
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2015078
+Time for iterOther        = 1  timeOther        = 0.091511875
+Time for psi.AddMultSpinorFineR2C is 4.5518655 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023856066
+Time for iterFFTFine      = 12  timeFFTFine      = 0.235144
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2056395
+Time for iterOther        = 1  timeOther        = 0.089581162
+Time for psi.AddMultSpinorFineR2C is 4.5542829 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022790641
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23500123
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2056291
+Time for iterOther        = 1  timeOther        = 0.090483189
+Time for psi.AddMultSpinorFineR2C is 4.5539597 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023133107
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23491411
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2087669
+Time for iterOther        = 1  timeOther        = 0.090271436
+Time for psi.AddMultSpinorFineR2C is 4.5571404 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023179196
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23347003
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2101445
+Time for iterOther        = 1  timeOther        = 0.092674792
+Time for psi.AddMultSpinorFineR2C is 4.5595175 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023396865
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23279493
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2106267
+Time for iterOther        = 1  timeOther        = 0.092326418
+Time for psi.AddMultSpinorFineR2C is 4.5592 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021722436
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23746708
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2053574
+Time for iterOther        = 1  timeOther        = 0.089831345
+Time for psi.AddMultSpinorFineR2C is 4.554443 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022384882
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23627548
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1991246
+Time for iterOther        = 1  timeOther        = 0.089370914
+Time for psi.AddMultSpinorFineR2C is 4.5472127 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022822559
+Time for iterFFTFine      = 12  timeFFTFine      = 0.235509
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2001104
+Time for iterOther        = 1  timeOther        = 0.090875991
+Time for psi.AddMultSpinorFineR2C is 4.5493711 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023181036
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23384522
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1978275
+Time for iterOther        = 1  timeOther        = 0.091233492
+Time for psi.AddMultSpinorFineR2C is 4.5461423 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023707047
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23359208
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2016793
+Time for iterOther        = 1  timeOther        = 0.092978343
+Time for psi.AddMultSpinorFineR2C is 4.5520114 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.0228974
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23358433
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2091335
+Time for iterOther        = 1  timeOther        = 0.090758435
+Time for psi.AddMultSpinorFineR2C is 4.55643 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02352263
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23370518
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2072858
+Time for iterOther        = 1  timeOther        = 0.09027642
+Time for psi.AddMultSpinorFineR2C is 4.5548431 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021994278
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23458428
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2097007
+Time for iterOther        = 1  timeOther        = 0.089463934
+Time for psi.AddMultSpinorFineR2C is 4.5557979 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021698289
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23460709
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2077734
+Time for iterOther        = 1  timeOther        = 0.089226685
+Time for psi.AddMultSpinorFineR2C is 4.5533594 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021782391
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23450188
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2066765
+Time for iterOther        = 1  timeOther        = 0.089516431
+Time for psi.AddMultSpinorFineR2C is 4.5525304 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022622049
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2352191
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1999131
+Time for iterOther        = 1  timeOther        = 0.090474471
+Time for psi.AddMultSpinorFineR2C is 4.5482824 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023195684
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2349399
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2041321
+Time for iterOther        = 1  timeOther        = 0.092601724
+Time for psi.AddMultSpinorFineR2C is 4.5549354 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024618827
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23199899
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1989906
+Time for iterOther        = 1  timeOther        = 0.09453395
+Time for psi.AddMultSpinorFineR2C is 4.5501929 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023220256
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23369096
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1986863
+Time for iterOther        = 1  timeOther        = 0.092822015
+Time for psi.AddMultSpinorFineR2C is 4.5484755 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022420421
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23388707
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1995305
+Time for iterOther        = 1  timeOther        = 0.090867743
+Time for psi.AddMultSpinorFineR2C is 4.5467589 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023064315
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23424517
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2062208
+Time for iterOther        = 1  timeOther        = 0.090587758
+Time for psi.AddMultSpinorFineR2C is 4.5541723 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023001336
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23446597
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2070456
+Time for iterOther        = 1  timeOther        = 0.091168396
+Time for psi.AddMultSpinorFineR2C is 4.5557348 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022284269
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23658495
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1960643
+Time for iterOther        = 1  timeOther        = 0.090131685
+Time for psi.AddMultSpinorFineR2C is 4.5451224 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023372464
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23499543
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2055997
+Time for iterOther        = 1  timeOther        = 0.09103512
+Time for psi.AddMultSpinorFineR2C is 4.5550558 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023430191
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23570631
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2075009
+Time for iterOther        = 1  timeOther        = 0.090843335
+Time for psi.AddMultSpinorFineR2C is 4.5575377 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02348204
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23324839
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2057318
+Time for iterOther        = 1  timeOther        = 0.09420485
+Time for psi.AddMultSpinorFineR2C is 4.5567229 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023196511
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23297653
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2052879
+Time for iterOther        = 1  timeOther        = 0.092936225
+Time for psi.AddMultSpinorFineR2C is 4.5544611 [s]
+
+
+After 100 iterations, LOBPCG did not converge. 
+The maximum norm of the residual is 1.477155e-05
+
+The minimum norm of the residual is 5.8626808e-09
+
+Time for iterGemmT     = 1195  timeGemmT     = 4.6174378
+Time for iterGemmN     = 699  timeGemmN     = 2.426723
+Time for iterAllreduce = 1195  timeAllreduce = 0.4123957
+Time for iterAlltoallv = 304  timeAlltoallv = 6.5283965
+Time for iterSpinor    = 201  timeSpinor    = 462.21591
+Time for iterTrsm      = 1  timeTrsm      = 0.0027483106
+Time for iterMpirank0  = 702  timeMpirank0  = 1.4585559
+
+Time for the eigensolver is 479.41364 [s]
+
+Time for ham.EigVal() in PWDFT is 4.8354268e-06 [s]
+
+Time for computing occupation rate in PWDFT is 7.0109963e-06 [s]
+
+Raw data, sum of density          = 63.999981
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31428521 [s]
+
+ 
+Time for computing total xc energy in XC is 0.002508916 [s]
+
+Time for computing XC potential in PWDFT is 0.048406295 [s]
+
+Time for computing Hartree potential in PWDFT is 0.091370739 [s]
+
+Time for computing total potential in PWDFT is 0.0060825869 [s]
+
+Time for computing energy in PWDFT is 0.0086876974 [s]
+
+band#    = 0    eigval   = -1.20657791e-01 resval   = +6.39388624e-08 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -6.19313928e-02 resval   = +3.46632419e-06 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -6.19313925e-02 resval   = +3.08169175e-06 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -6.19313925e-02 resval   = +5.55506240e-07 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -6.19313925e-02 resval   = +1.52045963e-07 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -6.19313924e-02 resval   = +6.14398811e-06 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -6.19313917e-02 resval   = +2.94186935e-06 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -1.32929235e-02 resval   = +1.88874963e-07 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -1.32929235e-02 resval   = +6.49774387e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -1.32929235e-02 resval   = +1.90370587e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -1.32929235e-02 resval   = +3.14684299e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -1.32929235e-02 resval   = +4.77454054e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -1.32929235e-02 resval   = +3.76873005e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -1.32929234e-02 resval   = +5.47381967e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -1.32929234e-02 resval   = +6.05881085e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -1.32929234e-02 resval   = +3.89625228e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -1.32929234e-02 resval   = +1.65401467e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -1.32929234e-02 resval   = +4.28043853e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -1.32929234e-02 resval   = +1.27555689e-07 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -1.06384495e-02 resval   = +2.66832663e-07 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -1.06384495e-02 resval   = +7.52592244e-08 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -1.06384495e-02 resval   = +1.00731431e-07 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -1.06384494e-02 resval   = +8.50138245e-08 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +8.94819393e-02 resval   = +1.97613565e-07 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +8.94819393e-02 resval   = +8.58378404e-08 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +8.94819393e-02 resval   = +3.22615121e-08 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +8.94819393e-02 resval   = +2.00928085e-08 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +8.94819393e-02 resval   = +2.48596421e-08 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +8.94819394e-02 resval   = +3.42596333e-07 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +9.95989872e-02 resval   = +5.72832216e-08 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +9.95989872e-02 resval   = +3.78456669e-08 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +9.95989872e-02 resval   = +4.56401660e-08 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.76311871e-01 resval   = +1.09103109e-07 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.76311871e-01 resval   = +7.47664174e-09 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.76311871e-01 resval   = +2.56109249e-08 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.51057780e-01 resval   = +3.65825997e-08 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.51057780e-01 resval   = +3.65974277e-08 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.51057780e-01 resval   = +3.43940860e-08 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.51057780e-01 resval   = +4.96771051e-08 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.61788215e-01 resval   = +1.72058113e-07 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.61788215e-01 resval   = +5.07134414e-08 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.61788215e-01 resval   = +1.09967032e-08 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.61788215e-01 resval   = +1.30648420e-08 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.61788215e-01 resval   = +3.11001971e-08 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.61788215e-01 resval   = +9.02093901e-08 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.61788215e-01 resval   = +1.62750961e-07 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.61788215e-01 resval   = +1.23063180e-07 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.61788215e-01 resval   = +6.76145079e-09 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.61788215e-01 resval   = +2.00690744e-08 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.61788215e-01 resval   = +6.50463986e-08 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.61788215e-01 resval   = +1.38490330e-07 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.46964187e-01 resval   = +3.39120661e-07 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.46964187e-01 resval   = +1.10079295e-07 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.46964187e-01 resval   = +9.86552066e-09 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.46964187e-01 resval   = +6.90299965e-09 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.46964187e-01 resval   = +6.79422098e-09 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.46964187e-01 resval   = +1.16692757e-08 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.46964187e-01 resval   = +1.12367052e-08 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.46964187e-01 resval   = +1.61222728e-08 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.46964187e-01 resval   = +1.15494999e-08 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.46964187e-01 resval   = +5.86268076e-09 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.46964187e-01 resval   = +1.00573325e-07 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.46964187e-01 resval   = +1.72840375e-07 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.89480423e-01 resval   = +1.21569137e-07 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.89480423e-01 resval   = +1.10464773e-07 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.89480423e-01 resval   = +2.08267700e-08 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.89480423e-01 resval   = +2.74117796e-08 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.89480423e-01 resval   = +4.59956601e-08 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.89480423e-01 resval   = +1.04842851e-07 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.89480423e-01 resval   = +4.34255002e-08 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.89480423e-01 resval   = +5.72086975e-08 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.89480423e-01 resval   = +2.55034804e-08 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.89480423e-01 resval   = +3.68086448e-08 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.89480423e-01 resval   = +5.26397064e-08 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.89480423e-01 resval   = +9.51539253e-08 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.71578914e-01 resval   = +5.74244938e-08 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.71578914e-01 resval   = +1.44365088e-08 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.71578914e-01 resval   = +1.80153094e-08 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.71578915e-01 resval   = +3.81301118e-08 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.71578915e-01 resval   = +7.85630807e-09 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.71578915e-01 resval   = +4.92762685e-08 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.77374345e-01 resval   = +4.43071953e-06 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.77374345e-01 resval   = +7.00069045e-07 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.77374345e-01 resval   = +4.26512741e-06 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.77374345e-01 resval   = +5.09301083e-06 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.77374346e-01 resval   = +1.47715496e-05 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.77374346e-01 resval   = +6.45209839e-06 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +5.10630056e-01 resval   = +2.52868943e-07 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +5.10630056e-01 resval   = +5.16670881e-07 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +5.10630056e-01 resval   = +4.80599334e-08 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +5.10630056e-01 resval   = +6.91113833e-08 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +5.10630056e-01 resval   = +2.68645325e-07 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +5.10630056e-01 resval   = +1.08326821e-07 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.42335769e+01 [au]  
+Efree             = -2.42335769e+01 [au]  
+EfreeHarris       = -2.22693906e+01 [au]  
+Ekin              = +2.82747146e-01 [au]  
+Ehart             = -1.39416412e+02 [au]  
+EVxc              = -2.29950221e+01 [au]  
+Exc               = -1.76373370e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.45163240e+01 [au]  
+Fermi             = +1.37955429e-01 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +2.71022639e+00 [eV]  
+LUMO              = +4.79769020e+00 [eV]  
+norm(out-in)/norm(in) = +1.55327733e-01 
+Efree diff per atom   = +3.06904102e-02 
+Time for computing potential mixing in PWDFT is 0.23444254 [s]
+
+Total wall clock time for this SCF iteration = 480.128 [s]
+
+*********************************************************************
+SCF iteration # 3
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023373105
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23396322
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2010124
+Time for iterOther        = 1  timeOther        = 0.092092097
+Time for psi.AddMultSpinorFineR2C is 4.5504929 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022099137
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23438268
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2038028
+Time for iterOther        = 1  timeOther        = 0.090500854
+Time for psi.AddMultSpinorFineR2C is 4.550842 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022160858
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23430742
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1993658
+Time for iterOther        = 1  timeOther        = 0.090108581
+Time for psi.AddMultSpinorFineR2C is 4.5460061 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021490201
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2361508
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1976645
+Time for iterOther        = 1  timeOther        = 0.089498416
+Time for psi.AddMultSpinorFineR2C is 4.544859 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023197234
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23431771
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2003626
+Time for iterOther        = 1  timeOther        = 0.092142746
+Time for psi.AddMultSpinorFineR2C is 4.5500715 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023205683
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23506795
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1993533
+Time for iterOther        = 1  timeOther        = 0.090524457
+Time for psi.AddMultSpinorFineR2C is 4.5482035 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022703864
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23440224
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2084799
+Time for iterOther        = 1  timeOther        = 0.090273425
+Time for psi.AddMultSpinorFineR2C is 4.5559131 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02342926
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23407333
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2091447
+Time for iterOther        = 1  timeOther        = 0.092190214
+Time for psi.AddMultSpinorFineR2C is 4.5588911 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023684517
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23347227
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2087476
+Time for iterOther        = 1  timeOther        = 0.090496331
+Time for psi.AddMultSpinorFineR2C is 4.556453 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021791257
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23451076
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2071927
+Time for iterOther        = 1  timeOther        = 0.089661509
+Time for psi.AddMultSpinorFineR2C is 4.5532142 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.0213295
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2348808
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2075938
+Time for iterOther        = 1  timeOther        = 0.088711858
+Time for psi.AddMultSpinorFineR2C is 4.5525686 [s]
+
+
+After 10 iterations, LOBPCG did not converge. 
+The maximum norm of the residual is 1.2190573e-07
+
+The minimum norm of the residual is 1.2759842e-11
+
+Time for iterGemmT     = 115  timeGemmT     = 0.44290093
+Time for iterGemmN     = 69  timeGemmN     = 0.23877527
+Time for iterAllreduce = 115  timeAllreduce = 0.042008333
+Time for iterAlltoallv = 34  timeAlltoallv = 0.7303641
+Time for iterSpinor    = 21  timeSpinor    = 50.297807
+Time for iterTrsm      = 1  timeTrsm      = 0.0026884153
+Time for iterMpirank0  = 72  timeMpirank0  = 0.2417792
+
+Time for the eigensolver is 52.188657 [s]
+
+Time for ham.EigVal() in PWDFT is 6.0200691e-06 [s]
+
+Time for computing occupation rate in PWDFT is 6.5416098e-06 [s]
+
+Raw data, sum of density          = 63.999982
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31106774 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0025119781 [s]
+
+Time for computing XC potential in PWDFT is 0.048619032 [s]
+
+Time for computing Hartree potential in PWDFT is 0.091648228 [s]
+
+Time for computing total potential in PWDFT is 0.0052895397 [s]
+
+Time for computing energy in PWDFT is 0.0087208301 [s]
+
+band#    = 0    eigval   = -1.63667246e-01 resval   = +6.01513820e-09 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -1.06306403e-01 resval   = +1.11607627e-07 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -1.06306400e-01 resval   = +1.11590047e-07 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -1.06306399e-01 resval   = +1.11678696e-07 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -1.06306398e-01 resval   = +1.11620869e-07 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -1.06306397e-01 resval   = +1.11588057e-07 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -1.06306392e-01 resval   = +1.11616308e-07 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -5.96560048e-02 resval   = +1.36421739e-08 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -5.96560015e-02 resval   = +1.36421643e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -5.96560003e-02 resval   = +1.36421705e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -5.96559992e-02 resval   = +1.36421710e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -5.96559977e-02 resval   = +1.36421855e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -5.96559971e-02 resval   = +1.36421632e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -5.96559955e-02 resval   = +1.36421723e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -5.96559948e-02 resval   = +1.36421616e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -5.96559939e-02 resval   = +1.36421700e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -5.96559932e-02 resval   = +1.36421673e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -5.96559924e-02 resval   = +1.36421426e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -5.96559858e-02 resval   = +1.36421558e-08 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -5.80834881e-02 resval   = +5.46298155e-09 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -5.80834862e-02 resval   = +5.46710379e-09 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -5.80834841e-02 resval   = +5.45347643e-09 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -5.80834822e-02 resval   = +5.39176156e-09 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +3.73604657e-02 resval   = +5.77017434e-10 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +3.73604678e-02 resval   = +5.76807541e-10 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +3.73604691e-02 resval   = +5.76895724e-10 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.73604731e-02 resval   = +5.77047201e-10 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.73604742e-02 resval   = +5.76555802e-10 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.73604774e-02 resval   = +5.76661950e-10 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +4.75075696e-02 resval   = +4.21478835e-09 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +4.75075730e-02 resval   = +4.21482211e-09 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +4.75075757e-02 resval   = +4.21542087e-09 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.36868713e-01 resval   = +2.48517815e-11 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.36868713e-01 resval   = +2.48609838e-11 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.36868713e-01 resval   = +2.48481113e-11 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.13160297e-01 resval   = +1.42606411e-10 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.13160297e-01 resval   = +1.42646021e-10 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.13160297e-01 resval   = +1.42555746e-10 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.13160299e-01 resval   = +1.42930108e-10 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.21698092e-01 resval   = +1.28676265e-11 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.21698092e-01 resval   = +1.27598415e-11 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.21698094e-01 resval   = +1.31243100e-11 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.21698095e-01 resval   = +1.37547348e-11 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.21698095e-01 resval   = +1.27821685e-11 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.21698096e-01 resval   = +1.29084161e-11 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.21698096e-01 resval   = +1.32463329e-11 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.21698097e-01 resval   = +1.41167120e-11 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.21698098e-01 resval   = +1.48773442e-11 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.21698098e-01 resval   = +1.30877842e-11 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.21698100e-01 resval   = +1.28511496e-11 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.21698101e-01 resval   = +1.42120356e-11 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.06149870e-01 resval   = +5.71473340e-11 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.06149871e-01 resval   = +8.22064319e-11 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.06149872e-01 resval   = +9.20926799e-11 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.06149873e-01 resval   = +4.99556557e-11 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.06149873e-01 resval   = +6.45107670e-11 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.06149873e-01 resval   = +9.02020421e-11 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.06149874e-01 resval   = +7.70074332e-11 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.06149875e-01 resval   = +2.73732076e-11 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.06149875e-01 resval   = +4.68723628e-11 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.06149875e-01 resval   = +4.92457227e-11 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.06149876e-01 resval   = +6.35955388e-11 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.06149877e-01 resval   = +9.29659720e-11 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.44063316e-01 resval   = +1.21904556e-07 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.44063318e-01 resval   = +1.21904573e-07 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.44063318e-01 resval   = +1.21904497e-07 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.44063318e-01 resval   = +1.21904476e-07 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.44063319e-01 resval   = +1.21905733e-07 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.44063320e-01 resval   = +1.21904532e-07 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.44063320e-01 resval   = +1.21904659e-07 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.44063321e-01 resval   = +1.21904584e-07 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.44063322e-01 resval   = +1.21904362e-07 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.44063322e-01 resval   = +1.21904773e-07 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.44063323e-01 resval   = +1.21904243e-07 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.44063325e-01 resval   = +1.21904388e-07 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.22938687e-01 resval   = +6.26900837e-10 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.22938688e-01 resval   = +6.39917826e-10 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.22938688e-01 resval   = +6.14263775e-10 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.22938689e-01 resval   = +5.95900178e-10 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.22938690e-01 resval   = +6.05239459e-10 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.22938690e-01 resval   = +6.05340315e-10 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.26625445e-01 resval   = +5.81686155e-08 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.26625447e-01 resval   = +6.24307237e-08 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.26625448e-01 resval   = +9.69382239e-08 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.26625448e-01 resval   = +5.52465575e-08 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.26625449e-01 resval   = +5.81467501e-08 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.26625452e-01 resval   = +6.87331762e-08 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +4.63839881e-01 resval   = +5.68188058e-09 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +4.63839882e-01 resval   = +6.78246871e-09 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +4.63839883e-01 resval   = +8.92150836e-09 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +4.63839883e-01 resval   = +6.82235650e-09 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +4.63839885e-01 resval   = +1.58211716e-08 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +4.63839887e-01 resval   = +8.70884418e-09 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.76427770e+01 [au]  
+Efree             = -2.76427770e+01 [au]  
+EfreeHarris       = -2.72823760e+01 [au]  
+Ekin              = -2.76605197e+00 [au]  
+Ehart             = -1.38960182e+02 [au]  
+EVxc              = -2.33916623e+01 [au]  
+Exc               = -1.79381481e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.48767250e+01 [au]  
+Fermi             = +9.21881428e-02 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +1.29274693e+00 [eV]  
+LUMO              = +3.72438723e+00 [eV]  
+norm(out-in)/norm(in) = +1.85275221e-02 
+Efree diff per atom   = +5.63126520e-03 
+Time for computing potential mixing in PWDFT is 0.25195453 [s]
+
+Total wall clock time for this SCF iteration = 52.916958 [s]
+
+*********************************************************************
+SCF iteration # 4
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022104837
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23493161
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2081171
+Time for iterOther        = 1  timeOther        = 0.089038737
+Time for psi.AddMultSpinorFineR2C is 4.5542537 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021082021
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23652344
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1956436
+Time for iterOther        = 1  timeOther        = 0.090987831
+Time for psi.AddMultSpinorFineR2C is 4.5442863 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022820339
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23483837
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2003005
+Time for iterOther        = 1  timeOther        = 0.089967579
+Time for psi.AddMultSpinorFineR2C is 4.547976 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.0227466
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23250472
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2008774
+Time for iterOther        = 1  timeOther        = 0.093197666
+Time for psi.AddMultSpinorFineR2C is 4.5493809 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023030154
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23303842
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1996402
+Time for iterOther        = 1  timeOther        = 0.090892248
+Time for psi.AddMultSpinorFineR2C is 4.5466612 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021593928
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23403516
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1996711
+Time for iterOther        = 1  timeOther        = 0.090242036
+Time for psi.AddMultSpinorFineR2C is 4.5456017 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022519492
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23367183
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2047741
+Time for iterOther        = 1  timeOther        = 0.090256669
+Time for psi.AddMultSpinorFineR2C is 4.5512776 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022534527
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23415476
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2092869
+Time for iterOther        = 1  timeOther        = 0.088544384
+Time for psi.AddMultSpinorFineR2C is 4.5545825 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023567721
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2343524
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2097265
+Time for iterOther        = 1  timeOther        = 0.090762921
+Time for psi.AddMultSpinorFineR2C is 4.5584676 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021929145
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23661488
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2011219
+Time for iterOther        = 1  timeOther        = 0.089683279
+Time for psi.AddMultSpinorFineR2C is 4.549404 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022542275
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23588989
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2076947
+Time for iterOther        = 1  timeOther        = 0.089810036
+Time for psi.AddMultSpinorFineR2C is 4.5559895 [s]
+
+
+After 10 iterations, LOBPCG did not converge. 
+The maximum norm of the residual is 1.0480137e-07
+
+The minimum norm of the residual is 3.1785145e-12
+
+Time for iterGemmT     = 115  timeGemmT     = 0.44394093
+Time for iterGemmN     = 69  timeGemmN     = 0.23822419
+Time for iterAllreduce = 115  timeAllreduce = 0.043221839
+Time for iterAlltoallv = 34  timeAlltoallv = 0.74191358
+Time for iterSpinor    = 21  timeSpinor    = 50.288951
+Time for iterTrsm      = 1  timeTrsm      = 0.0027733371
+Time for iterMpirank0  = 72  timeMpirank0  = 0.24100917
+
+Time for the eigensolver is 52.194219 [s]
+
+Time for ham.EigVal() in PWDFT is 4.1723251e-06 [s]
+
+Time for computing occupation rate in PWDFT is 7.0035458e-06 [s]
+
+Raw data, sum of density          = 63.999983
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31503474 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0033815801 [s]
+
+Time for computing XC potential in PWDFT is 0.049428463 [s]
+
+Time for computing Hartree potential in PWDFT is 0.091131337 [s]
+
+Time for computing total potential in PWDFT is 0.0059174448 [s]
+
+Time for computing energy in PWDFT is 0.0088144317 [s]
+
+band#    = 0    eigval   = -1.65890852e-01 resval   = +1.09282692e-09 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -1.08512959e-01 resval   = +1.08697155e-08 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -1.08512955e-01 resval   = +1.08696621e-08 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -1.08512953e-01 resval   = +1.08697080e-08 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -1.08512952e-01 resval   = +1.08696488e-08 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -1.08512951e-01 resval   = +1.08696289e-08 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -1.08512948e-01 resval   = +1.08696398e-08 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -6.16934048e-02 resval   = +1.39132195e-08 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -6.16934003e-02 resval   = +1.39132961e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -6.16933998e-02 resval   = +1.39134771e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -6.16933985e-02 resval   = +1.39135053e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -6.16933982e-02 resval   = +1.39133733e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -6.16933970e-02 resval   = +1.39134140e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -6.16933960e-02 resval   = +1.39134370e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -6.16933949e-02 resval   = +1.39132951e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -6.16933939e-02 resval   = +1.39133277e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -6.16933932e-02 resval   = +1.39132501e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -6.16933919e-02 resval   = +1.39131741e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -6.16933892e-02 resval   = +1.39134684e-08 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -6.00910611e-02 resval   = +1.50168426e-09 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -6.00910600e-02 resval   = +1.51164532e-09 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -6.00910593e-02 resval   = +1.65210304e-09 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -6.00910576e-02 resval   = +1.63149537e-09 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +3.66208173e-02 resval   = +1.01516327e-10 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +3.66208196e-02 resval   = +1.01523797e-10 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +3.66208208e-02 resval   = +1.01547320e-10 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.66208227e-02 resval   = +1.01543047e-10 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.66208248e-02 resval   = +1.01532482e-10 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.66208265e-02 resval   = +1.01521016e-10 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +4.70514631e-02 resval   = +5.63735760e-10 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +4.70514645e-02 resval   = +5.65908766e-10 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +4.70514664e-02 resval   = +5.65394932e-10 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.31920073e-01 resval   = +3.17851450e-12 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.31920073e-01 resval   = +3.18918329e-12 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.31920073e-01 resval   = +3.20146643e-12 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.08695945e-01 resval   = +3.13200256e-11 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.08695945e-01 resval   = +3.07078974e-11 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.08695946e-01 resval   = +3.11765553e-11 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.08695946e-01 resval   = +3.05894812e-11 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.16625428e-01 resval   = +6.34143151e-12 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.16625428e-01 resval   = +7.16297456e-12 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.16625430e-01 resval   = +6.57051835e-12 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.16625431e-01 resval   = +7.47809358e-12 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.16625432e-01 resval   = +8.41811372e-12 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.16625432e-01 resval   = +6.32648625e-12 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.16625433e-01 resval   = +6.07803485e-12 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.16625433e-01 resval   = +7.26043140e-12 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.16625433e-01 resval   = +6.72373493e-12 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.16625434e-01 resval   = +6.19188033e-12 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.16625436e-01 resval   = +6.17726305e-12 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.16625437e-01 resval   = +6.28502141e-12 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.00931417e-01 resval   = +5.02410042e-11 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.00931418e-01 resval   = +4.25713793e-11 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.00931419e-01 resval   = +4.71834682e-11 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.00931419e-01 resval   = +2.34618134e-11 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.00931419e-01 resval   = +3.30089430e-11 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.00931420e-01 resval   = +2.67432568e-11 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.00931420e-01 resval   = +3.85320529e-11 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.00931420e-01 resval   = +3.61233139e-11 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.00931421e-01 resval   = +3.54251253e-11 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.00931421e-01 resval   = +4.71553341e-11 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.00931422e-01 resval   = +5.28520009e-11 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.00931422e-01 resval   = +4.57819799e-11 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.40614816e-01 resval   = +1.04799346e-07 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.40614817e-01 resval   = +1.04799900e-07 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.40614818e-01 resval   = +1.04800061e-07 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.40614819e-01 resval   = +1.04801372e-07 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.40614819e-01 resval   = +1.04800303e-07 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.40614820e-01 resval   = +1.04800568e-07 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.40614821e-01 resval   = +1.04800160e-07 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.40614821e-01 resval   = +1.04800412e-07 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.40614821e-01 resval   = +1.04801292e-07 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.40614822e-01 resval   = +1.04800386e-07 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.40614823e-01 resval   = +1.04800254e-07 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.40614823e-01 resval   = +1.04800601e-07 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.16518386e-01 resval   = +4.73127387e-10 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.16518386e-01 resval   = +4.68827345e-10 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.16518387e-01 resval   = +4.54959623e-10 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.16518387e-01 resval   = +3.94203144e-10 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.16518387e-01 resval   = +3.68820709e-10 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.16518387e-01 resval   = +3.95191789e-10 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.23997904e-01 resval   = +9.13387380e-08 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.23997906e-01 resval   = +9.13377791e-08 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.23997907e-01 resval   = +9.13418057e-08 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.23997907e-01 resval   = +9.13381312e-08 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.23997907e-01 resval   = +9.13385428e-08 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.23997909e-01 resval   = +9.13377122e-08 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +4.57859125e-01 resval   = +4.54817438e-09 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +4.57859126e-01 resval   = +3.62457105e-09 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +4.57859128e-01 resval   = +4.29795109e-09 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +4.57859128e-01 resval   = +3.54087124e-09 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +4.57859130e-01 resval   = +5.11555333e-09 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +4.57859131e-01 resval   = +4.92892852e-09 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.76801256e+01 [au]  
+Efree             = -2.76801256e+01 [au]  
+EfreeHarris       = -2.77502735e+01 [au]  
+Ekin              = -2.87354848e+00 [au]  
+Ehart             = -1.39047441e+02 [au]  
+EVxc              = -2.33204274e+01 [au]  
+Exc               = -1.78840244e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.48065772e+01 [au]  
+Fermi             = +8.94857685e-02 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +1.28033557e+00 [eV]  
+LUMO              = +3.58972788e+00 [eV]  
+norm(out-in)/norm(in) = +6.79625991e-04 
+Efree diff per atom   = +1.09605977e-03 
+Time for computing potential mixing in PWDFT is 0.26526836 [s]
+
+Total wall clock time for this SCF iteration = 52.940677 [s]
+
+*********************************************************************
+SCF iteration # 5
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023414709
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23438887
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2057921
+Time for iterOther        = 1  timeOther        = 0.091599092
+Time for psi.AddMultSpinorFineR2C is 4.5552466 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02314847
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23598242
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2110452
+Time for iterOther        = 1  timeOther        = 0.090183064
+Time for psi.AddMultSpinorFineR2C is 4.5604104 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.024181724
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23331641
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2033782
+Time for iterOther        = 1  timeOther        = 0.094697341
+Time for psi.AddMultSpinorFineR2C is 4.5556395 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023830824
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23294094
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1979801
+Time for iterOther        = 1  timeOther        = 0.094399467
+Time for psi.AddMultSpinorFineR2C is 4.5492035 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.020843707
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2356511
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2020163
+Time for iterOther        = 1  timeOther        = 0.090470366
+Time for psi.AddMultSpinorFineR2C is 4.5490338 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022193536
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23489608
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1970234
+Time for iterOther        = 1  timeOther        = 0.090739243
+Time for psi.AddMultSpinorFineR2C is 4.544909 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022387028
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23464774
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2015243
+Time for iterOther        = 1  timeOther        = 0.089218825
+Time for psi.AddMultSpinorFineR2C is 4.5478309 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022892267
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23371489
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2019878
+Time for iterOther        = 1  timeOther        = 0.091826811
+Time for psi.AddMultSpinorFineR2C is 4.5504765 [s]
+
+
+After 8 iterations, LOBPCG has converged.
+The maximum norm of the residual is 4.0232539e-08
+
+The minimum norm of the residual is 1.0057262e-11
+
+Time for iterGemmT     = 80  timeGemmT     = 0.30954767
+Time for iterGemmN     = 49  timeGemmN     = 0.17035555
+Time for iterAllreduce = 80  timeAllreduce = 0.031195909
+Time for iterAlltoallv = 25  timeAlltoallv = 0.54074134
+Time for iterSpinor    = 15  timeSpinor    = 36.575797
+Time for iterTrsm      = 1  timeTrsm      = 0.0026767477
+Time for iterMpirank0  = 52  timeMpirank0  = 0.16582137
+
+Time for the eigensolver is 37.937592 [s]
+
+Time for ham.EigVal() in PWDFT is 4.3138862e-06 [s]
+
+Time for computing occupation rate in PWDFT is 6.6906214e-06 [s]
+
+Raw data, sum of density          = 63.999983
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31257173 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0024793819 [s]
+
+Time for computing XC potential in PWDFT is 0.048274316 [s]
+
+Time for computing Hartree potential in PWDFT is 0.0916088 [s]
+
+Time for computing total potential in PWDFT is 0.0059629157 [s]
+
+Time for computing energy in PWDFT is 0.0087379813 [s]
+
+band#    = 0    eigval   = -1.66180423e-01 resval   = +1.02838870e-08 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -1.08824041e-01 resval   = +1.09688466e-08 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -1.08824038e-01 resval   = +1.09675551e-08 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -1.08824037e-01 resval   = +1.09671006e-08 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -1.08824036e-01 resval   = +1.09667213e-08 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -1.08824034e-01 resval   = +1.09662064e-08 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -1.08824030e-01 resval   = +1.09639578e-08 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -6.20458436e-02 resval   = +3.90967330e-08 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -6.20458426e-02 resval   = +3.90970833e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -6.20458410e-02 resval   = +3.90974677e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -6.20458404e-02 resval   = +3.91007016e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -6.20458395e-02 resval   = +3.90984966e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -6.20458390e-02 resval   = +3.90981415e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -6.20458379e-02 resval   = +3.90984274e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -6.20458363e-02 resval   = +3.90961848e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -6.20458358e-02 resval   = +3.90936108e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -6.20458342e-02 resval   = +3.90988613e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -6.20458338e-02 resval   = +3.90932393e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -6.20458314e-02 resval   = +3.90970962e-08 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -6.04614391e-02 resval   = +1.74083718e-09 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -6.04614383e-02 resval   = +1.73815227e-09 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -6.04614380e-02 resval   = +1.73894164e-09 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -6.04614375e-02 resval   = +1.73847889e-09 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +3.60937907e-02 resval   = +2.71466516e-10 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +3.60937923e-02 resval   = +2.66901903e-10 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +3.60937944e-02 resval   = +2.68502382e-10 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.60937956e-02 resval   = +2.67058513e-10 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.60937975e-02 resval   = +2.67522046e-10 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.60937985e-02 resval   = +2.68145612e-10 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +4.65049665e-02 resval   = +7.31521694e-09 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +4.65049674e-02 resval   = +7.31116843e-09 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +4.65049680e-02 resval   = +7.27467366e-09 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.31872455e-01 resval   = +1.27600244e-11 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.31872455e-01 resval   = +1.21056400e-11 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.31872455e-01 resval   = +1.00572620e-11 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.08638799e-01 resval   = +7.90445824e-11 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.08638799e-01 resval   = +8.27553703e-11 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.08638799e-01 resval   = +8.22459541e-11 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.08638799e-01 resval   = +8.15544788e-11 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.16575656e-01 resval   = +2.60551417e-11 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.16575657e-01 resval   = +2.87664410e-11 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.16575659e-01 resval   = +3.54337771e-11 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.16575660e-01 resval   = +3.48588634e-11 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.16575660e-01 resval   = +3.80325901e-11 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.16575660e-01 resval   = +2.99651828e-11 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.16575661e-01 resval   = +3.15917940e-11 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.16575661e-01 resval   = +3.96029619e-11 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.16575662e-01 resval   = +3.50503493e-11 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.16575662e-01 resval   = +2.81503347e-11 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.16575664e-01 resval   = +3.42992621e-11 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.16575665e-01 resval   = +2.16661174e-11 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.00879699e-01 resval   = +2.77278674e-10 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.00879699e-01 resval   = +2.17444045e-10 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.00879699e-01 resval   = +2.42181192e-10 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.00879700e-01 resval   = +2.25327944e-10 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.00879700e-01 resval   = +2.19939426e-10 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.00879700e-01 resval   = +1.94150146e-10 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.00879701e-01 resval   = +1.39139854e-10 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.00879701e-01 resval   = +1.33967953e-10 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.00879702e-01 resval   = +1.54711031e-10 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.00879702e-01 resval   = +2.42553442e-10 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.00879702e-01 resval   = +2.13328430e-10 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.00879703e-01 resval   = +2.64084144e-10 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.40378099e-01 resval   = +4.02304952e-08 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.40378100e-01 resval   = +4.02292180e-08 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.40378100e-01 resval   = +4.02298026e-08 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.40378101e-01 resval   = +4.02279276e-08 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.40378102e-01 resval   = +4.02313527e-08 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.40378102e-01 resval   = +4.02296812e-08 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.40378102e-01 resval   = +4.02302841e-08 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.40378103e-01 resval   = +4.02305919e-08 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.40378104e-01 resval   = +4.02307608e-08 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.40378104e-01 resval   = +4.02325386e-08 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.40378105e-01 resval   = +4.02312962e-08 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.40378106e-01 resval   = +4.02320499e-08 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.16434806e-01 resval   = +1.08352639e-09 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.16434806e-01 resval   = +1.11314702e-09 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.16434806e-01 resval   = +1.31423394e-09 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.16434807e-01 resval   = +9.26585340e-10 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.16434807e-01 resval   = +1.15252217e-09 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.16434807e-01 resval   = +1.29758683e-09 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.23626302e-01 resval   = +4.39907201e-09 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.23626303e-01 resval   = +4.39453373e-09 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.23626304e-01 resval   = +4.39723969e-09 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.23626304e-01 resval   = +4.39283010e-09 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.23626305e-01 resval   = +4.39264482e-09 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.23626306e-01 resval   = +4.39364737e-09 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +4.57776294e-01 resval   = +1.01620894e-08 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +4.57776295e-01 resval   = +7.63059331e-09 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +4.57776296e-01 resval   = +6.06557891e-09 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +4.57776297e-01 resval   = +6.20946647e-09 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +4.57776298e-01 resval   = +8.09324575e-09 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +4.57776299e-01 resval   = +9.38776954e-09 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.77155927e+01 [au]  
+Efree             = -2.77155927e+01 [au]  
+EfreeHarris       = -2.77054627e+01 [au]  
+Ekin              = -2.89888555e+00 [au]  
+Ehart             = -1.39034735e+02 [au]  
+EVxc              = -2.33311214e+01 [au]  
+Exc               = -1.78921419e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.48167071e+01 [au]  
+Fermi             = +8.91887111e-02 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +1.26546459e+00 [eV]  
+LUMO              = +3.58843214e+00 [eV]  
+norm(out-in)/norm(in) = +2.88823995e-04 
+Efree diff per atom   = +1.58280902e-04 
+Time for computing potential mixing in PWDFT is 0.28625974 [s]
+
+Total wall clock time for this SCF iteration = 38.701899 [s]
+
+*********************************************************************
+SCF iteration # 6
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022490665
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23406726
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2022515
+Time for iterOther        = 1  timeOther        = 0.089248344
+Time for psi.AddMultSpinorFineR2C is 4.5481087 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022128001
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23590233
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2070373
+Time for iterOther        = 1  timeOther        = 0.089111589
+Time for psi.AddMultSpinorFineR2C is 4.5542304 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022995949
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23418543
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2064027
+Time for iterOther        = 1  timeOther        = 0.08973065
+Time for psi.AddMultSpinorFineR2C is 4.5533675 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022758946
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23274801
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2117581
+Time for iterOther        = 1  timeOther        = 0.091520675
+Time for psi.AddMultSpinorFineR2C is 4.5588395 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02131094
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23477527
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2067761
+Time for iterOther        = 1  timeOther        = 0.090807445
+Time for psi.AddMultSpinorFineR2C is 4.5537217 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023175724
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23341422
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2078563
+Time for iterOther        = 1  timeOther        = 0.091780901
+Time for psi.AddMultSpinorFineR2C is 4.5562832 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022097744
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23634603
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2067402
+Time for iterOther        = 1  timeOther        = 0.088362284
+Time for psi.AddMultSpinorFineR2C is 4.553611 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02241715
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23534257
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1988963
+Time for iterOther        = 1  timeOther        = 0.090686582
+Time for psi.AddMultSpinorFineR2C is 4.5473945 [s]
+
+
+After 8 iterations, LOBPCG has converged.
+The maximum norm of the residual is 5.1369139e-08
+
+The minimum norm of the residual is 3.892713e-12
+
+Time for iterGemmT     = 80  timeGemmT     = 0.30942751
+Time for iterGemmN     = 49  timeGemmN     = 0.17014657
+Time for iterAllreduce = 80  timeAllreduce = 0.029461645
+Time for iterAlltoallv = 25  timeAlltoallv = 0.54312374
+Time for iterSpinor    = 15  timeSpinor    = 36.588323
+Time for iterTrsm      = 1  timeTrsm      = 0.0027792081
+Time for iterMpirank0  = 52  timeMpirank0  = 0.16536836
+
+Time for the eigensolver is 37.952239 [s]
+
+Time for ham.EigVal() in PWDFT is 2.0116568e-06 [s]
+
+Time for computing occupation rate in PWDFT is 3.9711595e-06 [s]
+
+Raw data, sum of density          = 63.999983
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31462036 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0024667829 [s]
+
+Time for computing XC potential in PWDFT is 0.048848085 [s]
+
+Time for computing Hartree potential in PWDFT is 0.09153343 [s]
+
+Time for computing total potential in PWDFT is 0.0060712993 [s]
+
+Time for computing energy in PWDFT is 0.0093718395 [s]
+
+band#    = 0    eigval   = -1.66054078e-01 resval   = +1.55057734e-09 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -1.08692464e-01 resval   = +5.25214441e-09 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -1.08692462e-01 resval   = +5.24879768e-09 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -1.08692461e-01 resval   = +5.25203221e-09 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -1.08692461e-01 resval   = +5.25022201e-09 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -1.08692460e-01 resval   = +5.24512835e-09 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -1.08692459e-01 resval   = +5.25046676e-09 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -6.19040503e-02 resval   = +5.13691395e-08 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -6.19040497e-02 resval   = +5.13326881e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -6.19040492e-02 resval   = +5.13578074e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -6.19040484e-02 resval   = +5.13427390e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -6.19040478e-02 resval   = +5.13562696e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -6.19040470e-02 resval   = +5.13437048e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -6.19040465e-02 resval   = +5.13432928e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -6.19040460e-02 resval   = +5.13395957e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -6.19040456e-02 resval   = +5.13473425e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -6.19040454e-02 resval   = +5.13468122e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -6.19040444e-02 resval   = +5.13364101e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -6.19040443e-02 resval   = +5.13516829e-08 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -6.03154290e-02 resval   = +3.29731506e-10 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -6.03154290e-02 resval   = +3.30799715e-10 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -6.03154289e-02 resval   = +3.33751872e-10 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -6.03154288e-02 resval   = +3.34752366e-10 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +3.62802976e-02 resval   = +8.35883733e-11 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +3.62802978e-02 resval   = +7.83824433e-11 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +3.62802993e-02 resval   = +8.06019818e-11 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.62802996e-02 resval   = +7.11281899e-11 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.62803009e-02 resval   = +8.63805719e-11 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.62803018e-02 resval   = +8.07508524e-11 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +4.66969082e-02 resval   = +1.39496402e-09 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +4.66969083e-02 resval   = +1.21567096e-09 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +4.66969084e-02 resval   = +1.19490589e-09 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.31936135e-01 resval   = +3.89271303e-12 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.31936135e-01 resval   = +5.03460287e-12 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.31936135e-01 resval   = +3.95168872e-12 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.08706156e-01 resval   = +1.91615152e-11 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.08706156e-01 resval   = +1.67821547e-11 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.08706156e-01 resval   = +2.37670281e-11 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.08706156e-01 resval   = +2.16758349e-11 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.16639511e-01 resval   = +1.09401652e-11 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.16639511e-01 resval   = +2.39246945e-11 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.16639512e-01 resval   = +1.55924965e-11 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.16639512e-01 resval   = +2.13887138e-11 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.16639513e-01 resval   = +1.65980288e-11 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.16639513e-01 resval   = +1.51779682e-11 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.16639513e-01 resval   = +1.30021430e-11 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.16639513e-01 resval   = +1.39078968e-11 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.16639514e-01 resval   = +2.32660565e-11 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.16639514e-01 resval   = +2.01849821e-11 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.16639515e-01 resval   = +1.92572734e-11 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.16639515e-01 resval   = +1.35050759e-11 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.00943640e-01 resval   = +8.25507592e-11 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.00943640e-01 resval   = +8.72049512e-11 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.00943641e-01 resval   = +7.97762302e-11 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.00943641e-01 resval   = +6.00712911e-11 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.00943641e-01 resval   = +5.27928610e-11 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.00943641e-01 resval   = +6.85257873e-11 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.00943641e-01 resval   = +7.20654169e-11 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.00943641e-01 resval   = +7.90439883e-11 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.00943642e-01 resval   = +6.89728869e-11 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.00943642e-01 resval   = +8.99688840e-11 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.00943642e-01 resval   = +6.74685665e-11 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.00943642e-01 resval   = +8.74046728e-11 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.40491848e-01 resval   = +4.86419600e-09 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.40491848e-01 resval   = +4.85904300e-09 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.40491849e-01 resval   = +4.84894750e-09 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.40491849e-01 resval   = +4.85276708e-09 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.40491849e-01 resval   = +4.84801574e-09 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.40491850e-01 resval   = +4.85159574e-09 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.40491850e-01 resval   = +4.85152106e-09 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.40491850e-01 resval   = +4.84791027e-09 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.40491850e-01 resval   = +4.85404209e-09 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.40491851e-01 resval   = +4.84924685e-09 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.40491851e-01 resval   = +4.85032029e-09 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.40491851e-01 resval   = +4.85533398e-09 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.16502693e-01 resval   = +8.92198096e-10 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.16502693e-01 resval   = +8.52404746e-10 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.16502693e-01 resval   = +7.78386748e-10 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.16502694e-01 resval   = +7.33832599e-10 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.16502694e-01 resval   = +7.90083335e-10 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.16502694e-01 resval   = +6.32247130e-10 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.23776417e-01 resval   = +1.44743430e-08 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.23776418e-01 resval   = +1.44721683e-08 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.23776419e-01 resval   = +1.44740582e-08 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.23776419e-01 resval   = +1.44862208e-08 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.23776419e-01 resval   = +1.44716774e-08 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.23776420e-01 resval   = +1.44809274e-08 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +4.57846494e-01 resval   = +3.63806924e-09 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +4.57846495e-01 resval   = +3.09421705e-09 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +4.57846496e-01 resval   = +2.16113779e-09 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +4.57846496e-01 resval   = +2.16176049e-09 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +4.57846497e-01 resval   = +2.60337879e-09 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +4.57846497e-01 resval   = +4.08215652e-09 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.77030857e+01 [au]  
+Efree             = -2.77030857e+01 [au]  
+EfreeHarris       = -2.77058003e+01 [au]  
+Ekin              = -2.88909321e+00 [au]  
+Ehart             = -1.39038145e+02 [au]  
+EVxc              = -2.33282362e+01 [au]  
+Exc               = -1.78899521e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.48139925e+01 [au]  
+Fermi             = +8.93165216e-02 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +1.27068755e+00 [eV]  
+LUMO              = +3.59016496e+00 [eV]  
+norm(out-in)/norm(in) = +4.05760353e-06 
+Efree diff per atom   = +4.24161579e-05 
+Time for computing potential mixing in PWDFT is 0.29986672 [s]
+
+Total wall clock time for this SCF iteration = 38.73366 [s]
+
+*********************************************************************
+SCF iteration # 7
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021104023
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2367792
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1983248
+Time for iterOther        = 1  timeOther        = 0.088176534
+Time for psi.AddMultSpinorFineR2C is 4.5444391 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022208855
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23524901
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2024485
+Time for iterOther        = 1  timeOther        = 0.090120956
+Time for psi.AddMultSpinorFineR2C is 4.5500871 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.02257254
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23427297
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1994168
+Time for iterOther        = 1  timeOther        = 0.091018751
+Time for psi.AddMultSpinorFineR2C is 4.547342 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023659661
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23470666
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1970857
+Time for iterOther        = 1  timeOther        = 0.090851948
+Time for psi.AddMultSpinorFineR2C is 4.5463622 [s]
+
+
+After 4 iterations, LOBPCG has converged.
+The maximum norm of the residual is 3.6493867e-08
+
+The minimum norm of the residual is 4.8196644e-10
+
+Time for iterGemmT     = 32  timeGemmT     = 0.1232576
+Time for iterGemmN     = 21  timeGemmN     = 0.071949981
+Time for iterAllreduce = 32  timeAllreduce = 0.014550872
+Time for iterAlltoallv = 13  timeAlltoallv = 0.28585357
+Time for iterSpinor    = 7  timeSpinor    = 18.258659
+Time for iterTrsm      = 1  timeTrsm      = 0.0026888028
+Time for iterMpirank0  = 24  timeMpirank0  = 0.062664703
+
+Time for the eigensolver is 18.893091 [s]
+
+Time for ham.EigVal() in PWDFT is 6.377697e-06 [s]
+
+Time for computing occupation rate in PWDFT is 6.4745545e-06 [s]
+
+Raw data, sum of density          = 63.999983
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31666356 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0025692955 [s]
+
+Time for computing XC potential in PWDFT is 0.047913671 [s]
+
+Time for computing Hartree potential in PWDFT is 0.091472544 [s]
+
+Time for computing total potential in PWDFT is 0.0052129552 [s]
+
+Time for computing energy in PWDFT is 0.008679077 [s]
+
+band#    = 0    eigval   = -1.66053229e-01 resval   = +3.06655118e-08 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -1.08691594e-01 resval   = +2.24393939e-08 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -1.08691593e-01 resval   = +2.22981594e-08 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -1.08691592e-01 resval   = +2.24859463e-08 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -1.08691592e-01 resval   = +2.21676022e-08 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -1.08691591e-01 resval   = +2.23623896e-08 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -1.08691589e-01 resval   = +2.25434143e-08 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -6.19031486e-02 resval   = +1.81460022e-08 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -6.19031485e-02 resval   = +1.82067134e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -6.19031475e-02 resval   = +1.80891659e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -6.19031473e-02 resval   = +1.81557635e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -6.19031470e-02 resval   = +1.81649802e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -6.19031464e-02 resval   = +1.82465842e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -6.19031459e-02 resval   = +1.82774109e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -6.19031452e-02 resval   = +1.81948261e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -6.19031447e-02 resval   = +1.83084516e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -6.19031439e-02 resval   = +1.82461178e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -6.19031434e-02 resval   = +1.84022082e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -6.19031428e-02 resval   = +1.83162733e-08 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -6.03145156e-02 resval   = +9.07682687e-09 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -6.03145156e-02 resval   = +8.91831242e-09 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -6.03145156e-02 resval   = +8.83545462e-09 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -6.03145155e-02 resval   = +8.85302484e-09 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +3.62813229e-02 resval   = +1.24905897e-08 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +3.62813237e-02 resval   = +1.39703563e-08 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +3.62813249e-02 resval   = +1.32511287e-08 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.62813252e-02 resval   = +1.25539776e-08 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.62813266e-02 resval   = +1.32599047e-08 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.62813268e-02 resval   = +1.31108040e-08 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +4.66979472e-02 resval   = +2.16264693e-08 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +4.66979473e-02 resval   = +2.18722970e-08 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +4.66979473e-02 resval   = +2.19861374e-08 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.31936868e-01 resval   = +6.22443092e-10 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.31936868e-01 resval   = +5.03271910e-10 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.31936868e-01 resval   = +4.81966438e-10 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.08706894e-01 resval   = +3.30543588e-09 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.08706894e-01 resval   = +3.29740089e-09 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.08706894e-01 resval   = +3.28128256e-09 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.08706894e-01 resval   = +3.29267558e-09 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.16640249e-01 resval   = +9.02720614e-10 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.16640249e-01 resval   = +1.20214295e-09 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.16640250e-01 resval   = +1.13560340e-09 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.16640250e-01 resval   = +1.20814442e-09 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.16640251e-01 resval   = +1.03827411e-09 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.16640251e-01 resval   = +1.00188690e-09 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.16640251e-01 resval   = +1.04245961e-09 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.16640251e-01 resval   = +1.02358280e-09 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.16640251e-01 resval   = +1.24458106e-09 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.16640252e-01 resval   = +9.93289695e-10 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.16640253e-01 resval   = +1.30948550e-09 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.16640253e-01 resval   = +8.75579673e-10 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.00944383e-01 resval   = +5.34326288e-09 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.00944383e-01 resval   = +3.99617924e-09 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.00944383e-01 resval   = +4.30896990e-09 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.00944384e-01 resval   = +4.27502344e-09 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.00944384e-01 resval   = +4.25896485e-09 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.00944384e-01 resval   = +3.58648888e-09 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.00944384e-01 resval   = +3.04508346e-09 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.00944384e-01 resval   = +2.62553639e-09 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.00944384e-01 resval   = +4.24862308e-09 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.00944385e-01 resval   = +3.65870403e-09 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.00944385e-01 resval   = +4.54061810e-09 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.00944385e-01 resval   = +5.08481533e-09 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.40492749e-01 resval   = +2.64068513e-08 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.40492749e-01 resval   = +2.62635894e-08 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.40492750e-01 resval   = +2.62444159e-08 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.40492750e-01 resval   = +2.62679986e-08 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.40492750e-01 resval   = +2.61997407e-08 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.40492750e-01 resval   = +2.64173982e-08 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.40492751e-01 resval   = +2.63304120e-08 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.40492751e-01 resval   = +2.65881109e-08 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.40492751e-01 resval   = +2.64577088e-08 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.40492752e-01 resval   = +2.67083094e-08 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.40492752e-01 resval   = +2.67850962e-08 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.40492753e-01 resval   = +2.68274465e-08 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.16503479e-01 resval   = +1.97341177e-08 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.16503479e-01 resval   = +3.13181046e-08 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.16503479e-01 resval   = +2.21495842e-08 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.16503479e-01 resval   = +2.21622104e-08 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.16503479e-01 resval   = +3.10574914e-08 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.16503479e-01 resval   = +2.03656982e-08 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.23777469e-01 resval   = +3.59217209e-08 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.23777469e-01 resval   = +3.61231870e-08 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.23777470e-01 resval   = +3.60734300e-08 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.23777470e-01 resval   = +3.62371908e-08 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.23777470e-01 resval   = +3.61303723e-08 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.23777471e-01 resval   = +3.64938666e-08 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +4.57847311e-01 resval   = +1.28232648e-08 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +4.57847311e-01 resval   = +1.16509998e-08 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +4.57847312e-01 resval   = +1.17789517e-08 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +4.57847312e-01 resval   = +1.24121213e-08 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +4.57847313e-01 resval   = +1.24433608e-08 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +4.57847314e-01 resval   = +1.24179300e-08 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.77030160e+01 [au]  
+Efree             = -2.77030160e+01 [au]  
+EfreeHarris       = -2.77030261e+01 [au]  
+Ekin              = -2.88903361e+00 [au]  
+Ehart             = -1.39038157e+02 [au]  
+EVxc              = -2.33282251e+01 [au]  
+Exc               = -1.78899437e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.48139824e+01 [au]  
+Fermi             = +8.93174077e-02 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +1.27071582e+00 [eV]  
+LUMO              = +3.59018492e+00 [eV]  
+norm(out-in)/norm(in) = +2.08569093e-06 
+Efree diff per atom   = +1.57720172e-07 
+Time for computing potential mixing in PWDFT is 0.32161555 [s]
+
+Total wall clock time for this SCF iteration = 19.693353 [s]
+
+*********************************************************************
+SCF iteration # 8
+*********************************************************************
+
+The current tolerance used by the eigensolver is 1e-07
+The target number of converged eigenvectors is 93
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.023851536
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23196387
+Time for iterNonlocal     = 6  timeNonlocal     = 4.1993914
+Time for iterOther        = 1  timeOther        = 0.09321098
+Time for psi.AddMultSpinorFineR2C is 4.5484662 [s]
+
+Minimum tolerance is 1e-09
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022502877
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23463833
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2094749
+Time for iterOther        = 1  timeOther        = 0.091871366
+Time for psi.AddMultSpinorFineR2C is 4.5585373 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.022846676
+Time for iterFFTFine      = 12  timeFFTFine      = 0.2337832
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2026298
+Time for iterOther        = 1  timeOther        = 0.092031322
+Time for psi.AddMultSpinorFineR2C is 4.551345 [s]
+
+Time for iterFFTCoarse    = 12  timeFFTCoarse    = 0.021572553
+Time for iterFFTFine      = 12  timeFFTFine      = 0.23538263
+Time for iterNonlocal     = 6  timeNonlocal     = 4.2067628
+Time for iterOther        = 1  timeOther        = 0.090922996
+Time for psi.AddMultSpinorFineR2C is 4.5546938 [s]
+
+
+After 4 iterations, LOBPCG has converged.
+The maximum norm of the residual is 4.8345417e-08
+
+The minimum norm of the residual is 6.1081041e-10
+
+Time for iterGemmT     = 32  timeGemmT     = 0.12331189
+Time for iterGemmN     = 21  timeGemmN     = 0.07220763
+Time for iterAllreduce = 32  timeAllreduce = 0.013512231
+Time for iterAlltoallv = 13  timeAlltoallv = 0.27033076
+Time for iterSpinor    = 7  timeSpinor    = 18.28402
+Time for iterTrsm      = 1  timeTrsm      = 0.0026826859
+Time for iterMpirank0  = 24  timeMpirank0  = 0.062920973
+
+Time for the eigensolver is 18.900858 [s]
+
+Time for ham.EigVal() in PWDFT is 2.7865171e-06 [s]
+
+Time for computing occupation rate in PWDFT is 4.7087669e-06 [s]
+
+Raw data, sum of density          = 63.999983
+Expected sum of density           = 64
+Raw data, sum of adjusted density = 64
+Time for computing density in PWDFT is 0.31376614 [s]
+
+ 
+Time for computing total xc energy in XC is 0.0025946945 [s]
+
+Time for computing XC potential in PWDFT is 0.048546337 [s]
+
+Time for computing Hartree potential in PWDFT is 0.091240741 [s]
+
+Time for computing total potential in PWDFT is 0.0053151101 [s]
+
+Time for computing energy in PWDFT is 0.0087076053 [s]
+
+band#    = 0    eigval   = -1.66052714e-01 resval   = +4.83454170e-08 occrate  = +1.00000000e+00 
+band#    = 1    eigval   = -1.08691053e-01 resval   = +1.19311784e-08 occrate  = +1.00000000e+00 
+band#    = 2    eigval   = -1.08691053e-01 resval   = +1.19210133e-08 occrate  = +1.00000000e+00 
+band#    = 3    eigval   = -1.08691053e-01 resval   = +1.19349239e-08 occrate  = +1.00000000e+00 
+band#    = 4    eigval   = -1.08691053e-01 resval   = +1.19145868e-08 occrate  = +1.00000000e+00 
+band#    = 5    eigval   = -1.08691053e-01 resval   = +1.19291432e-08 occrate  = +1.00000000e+00 
+band#    = 6    eigval   = -1.08691052e-01 resval   = +1.19324073e-08 occrate  = +1.00000000e+00 
+band#    = 7    eigval   = -6.19025611e-02 resval   = +2.69219588e-08 occrate  = +1.00000000e+00 
+band#    = 8    eigval   = -6.19025610e-02 resval   = +2.69493181e-08 occrate  = +1.00000000e+00 
+band#    = 9    eigval   = -6.19025609e-02 resval   = +2.68772375e-08 occrate  = +1.00000000e+00 
+band#    = 10   eigval   = -6.19025608e-02 resval   = +2.69619527e-08 occrate  = +1.00000000e+00 
+band#    = 11   eigval   = -6.19025607e-02 resval   = +2.69519225e-08 occrate  = +1.00000000e+00 
+band#    = 12   eigval   = -6.19025606e-02 resval   = +2.69883349e-08 occrate  = +1.00000000e+00 
+band#    = 13   eigval   = -6.19025605e-02 resval   = +2.69415913e-08 occrate  = +1.00000000e+00 
+band#    = 14   eigval   = -6.19025604e-02 resval   = +2.69197768e-08 occrate  = +1.00000000e+00 
+band#    = 15   eigval   = -6.19025603e-02 resval   = +2.69457863e-08 occrate  = +1.00000000e+00 
+band#    = 16   eigval   = -6.19025602e-02 resval   = +2.69150701e-08 occrate  = +1.00000000e+00 
+band#    = 17   eigval   = -6.19025601e-02 resval   = +2.69407573e-08 occrate  = +1.00000000e+00 
+band#    = 18   eigval   = -6.19025599e-02 resval   = +2.69616885e-08 occrate  = +1.00000000e+00 
+band#    = 19   eigval   = -6.03139112e-02 resval   = +1.35402200e-08 occrate  = +1.00000000e+00 
+band#    = 20   eigval   = -6.03139112e-02 resval   = +1.35187035e-08 occrate  = +1.00000000e+00 
+band#    = 21   eigval   = -6.03139112e-02 resval   = +1.35236817e-08 occrate  = +1.00000000e+00 
+band#    = 22   eigval   = -6.03139111e-02 resval   = +1.35230598e-08 occrate  = +1.00000000e+00 
+band#    = 23   eigval   = +3.62821115e-02 resval   = +7.47010547e-09 occrate  = +1.00000000e+00 
+band#    = 24   eigval   = +3.62821117e-02 resval   = +7.60701509e-09 occrate  = +1.00000000e+00 
+band#    = 25   eigval   = +3.62821119e-02 resval   = +7.49399057e-09 occrate  = +1.00000000e+00 
+band#    = 26   eigval   = +3.62821120e-02 resval   = +7.48545659e-09 occrate  = +1.00000000e+00 
+band#    = 27   eigval   = +3.62821122e-02 resval   = +7.57372835e-09 occrate  = +1.00000000e+00 
+band#    = 28   eigval   = +3.62821123e-02 resval   = +7.46430134e-09 occrate  = +1.00000000e+00 
+band#    = 29   eigval   = +4.66987587e-02 resval   = +1.93068027e-08 occrate  = +1.00000000e+00 
+band#    = 30   eigval   = +4.66987587e-02 resval   = +1.93048090e-08 occrate  = +1.00000000e+00 
+band#    = 31   eigval   = +4.66987587e-02 resval   = +1.93055798e-08 occrate  = +1.00000000e+00 
+band#    = 32   eigval   = +1.31937104e-01 resval   = +6.67516506e-10 occrate  = +0.00000000e+00 
+band#    = 33   eigval   = +1.31937104e-01 resval   = +6.20476347e-10 occrate  = +0.00000000e+00 
+band#    = 34   eigval   = +1.31937104e-01 resval   = +6.10810415e-10 occrate  = +0.00000000e+00 
+band#    = 35   eigval   = +2.08707146e-01 resval   = +1.51129800e-09 occrate  = +0.00000000e+00 
+band#    = 36   eigval   = +2.08707146e-01 resval   = +1.50837000e-09 occrate  = +0.00000000e+00 
+band#    = 37   eigval   = +2.08707146e-01 resval   = +1.50983913e-09 occrate  = +0.00000000e+00 
+band#    = 38   eigval   = +2.08707146e-01 resval   = +1.51065803e-09 occrate  = +0.00000000e+00 
+band#    = 39   eigval   = +2.16640487e-01 resval   = +8.23977618e-10 occrate  = +0.00000000e+00 
+band#    = 40   eigval   = +2.16640487e-01 resval   = +8.85206469e-10 occrate  = +0.00000000e+00 
+band#    = 41   eigval   = +2.16640487e-01 resval   = +8.88462164e-10 occrate  = +0.00000000e+00 
+band#    = 42   eigval   = +2.16640487e-01 resval   = +8.07985183e-10 occrate  = +0.00000000e+00 
+band#    = 43   eigval   = +2.16640487e-01 resval   = +8.22246399e-10 occrate  = +0.00000000e+00 
+band#    = 44   eigval   = +2.16640487e-01 resval   = +8.42422379e-10 occrate  = +0.00000000e+00 
+band#    = 45   eigval   = +2.16640487e-01 resval   = +8.63381144e-10 occrate  = +0.00000000e+00 
+band#    = 46   eigval   = +2.16640487e-01 resval   = +8.39386612e-10 occrate  = +0.00000000e+00 
+band#    = 47   eigval   = +2.16640487e-01 resval   = +8.24561286e-10 occrate  = +0.00000000e+00 
+band#    = 48   eigval   = +2.16640487e-01 resval   = +9.00688724e-10 occrate  = +0.00000000e+00 
+band#    = 49   eigval   = +2.16640488e-01 resval   = +9.17371289e-10 occrate  = +0.00000000e+00 
+band#    = 50   eigval   = +2.16640488e-01 resval   = +7.76506738e-10 occrate  = +0.00000000e+00 
+band#    = 51   eigval   = +3.00944621e-01 resval   = +2.25149122e-09 occrate  = +0.00000000e+00 
+band#    = 52   eigval   = +3.00944621e-01 resval   = +1.86107776e-09 occrate  = +0.00000000e+00 
+band#    = 53   eigval   = +3.00944621e-01 resval   = +1.98199283e-09 occrate  = +0.00000000e+00 
+band#    = 54   eigval   = +3.00944621e-01 resval   = +1.96030409e-09 occrate  = +0.00000000e+00 
+band#    = 55   eigval   = +3.00944621e-01 resval   = +1.76836356e-09 occrate  = +0.00000000e+00 
+band#    = 56   eigval   = +3.00944621e-01 resval   = +1.76522638e-09 occrate  = +0.00000000e+00 
+band#    = 57   eigval   = +3.00944621e-01 resval   = +1.43807115e-09 occrate  = +0.00000000e+00 
+band#    = 58   eigval   = +3.00944621e-01 resval   = +1.34143011e-09 occrate  = +0.00000000e+00 
+band#    = 59   eigval   = +3.00944621e-01 resval   = +1.96623703e-09 occrate  = +0.00000000e+00 
+band#    = 60   eigval   = +3.00944621e-01 resval   = +1.60025810e-09 occrate  = +0.00000000e+00 
+band#    = 61   eigval   = +3.00944621e-01 resval   = +2.07598570e-09 occrate  = +0.00000000e+00 
+band#    = 62   eigval   = +3.00944621e-01 resval   = +2.24228575e-09 occrate  = +0.00000000e+00 
+band#    = 63   eigval   = +3.40493213e-01 resval   = +2.97436255e-08 occrate  = +0.00000000e+00 
+band#    = 64   eigval   = +3.40493213e-01 resval   = +2.97271441e-08 occrate  = +0.00000000e+00 
+band#    = 65   eigval   = +3.40493213e-01 resval   = +2.95970562e-08 occrate  = +0.00000000e+00 
+band#    = 66   eigval   = +3.40493213e-01 resval   = +2.97225675e-08 occrate  = +0.00000000e+00 
+band#    = 67   eigval   = +3.40493213e-01 resval   = +2.94943823e-08 occrate  = +0.00000000e+00 
+band#    = 68   eigval   = +3.40493213e-01 resval   = +2.96807721e-08 occrate  = +0.00000000e+00 
+band#    = 69   eigval   = +3.40493213e-01 resval   = +2.97679994e-08 occrate  = +0.00000000e+00 
+band#    = 70   eigval   = +3.40493213e-01 resval   = +2.96774841e-08 occrate  = +0.00000000e+00 
+band#    = 71   eigval   = +3.40493213e-01 resval   = +2.96399814e-08 occrate  = +0.00000000e+00 
+band#    = 72   eigval   = +3.40493214e-01 resval   = +2.95692208e-08 occrate  = +0.00000000e+00 
+band#    = 73   eigval   = +3.40493214e-01 resval   = +2.97356960e-08 occrate  = +0.00000000e+00 
+band#    = 74   eigval   = +3.40493214e-01 resval   = +2.97308217e-08 occrate  = +0.00000000e+00 
+band#    = 75   eigval   = +4.16503734e-01 resval   = +7.39486022e-09 occrate  = +0.00000000e+00 
+band#    = 76   eigval   = +4.16503734e-01 resval   = +1.06415617e-08 occrate  = +0.00000000e+00 
+band#    = 77   eigval   = +4.16503734e-01 resval   = +9.41248723e-09 occrate  = +0.00000000e+00 
+band#    = 78   eigval   = +4.16503735e-01 resval   = +8.55201092e-09 occrate  = +0.00000000e+00 
+band#    = 79   eigval   = +4.16503735e-01 resval   = +9.61681825e-09 occrate  = +0.00000000e+00 
+band#    = 80   eigval   = +4.16503735e-01 resval   = +9.59765723e-09 occrate  = +0.00000000e+00 
+band#    = 81   eigval   = +4.23778098e-01 resval   = +1.23867587e-08 occrate  = +0.00000000e+00 
+band#    = 82   eigval   = +4.23778099e-01 resval   = +1.23607002e-08 occrate  = +0.00000000e+00 
+band#    = 83   eigval   = +4.23778099e-01 resval   = +1.23683575e-08 occrate  = +0.00000000e+00 
+band#    = 84   eigval   = +4.23778099e-01 resval   = +1.23430847e-08 occrate  = +0.00000000e+00 
+band#    = 85   eigval   = +4.23778099e-01 resval   = +1.23611166e-08 occrate  = +0.00000000e+00 
+band#    = 86   eigval   = +4.23778099e-01 resval   = +1.22903737e-08 occrate  = +0.00000000e+00 
+band#    = 87   eigval   = +4.57847580e-01 resval   = +3.06171296e-09 occrate  = +0.00000000e+00 
+band#    = 88   eigval   = +4.57847580e-01 resval   = +2.91082744e-09 occrate  = +0.00000000e+00 
+band#    = 89   eigval   = +4.57847580e-01 resval   = +2.93825851e-09 occrate  = +0.00000000e+00 
+band#    = 90   eigval   = +4.57847580e-01 resval   = +3.04631871e-09 occrate  = +0.00000000e+00 
+band#    = 91   eigval   = +4.57847581e-01 resval   = +2.90990741e-09 occrate  = +0.00000000e+00 
+band#    = 92   eigval   = +4.57847581e-01 resval   = +3.04516758e-09 occrate  = +0.00000000e+00 
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+Etot              = -2.77029630e+01 [au]  
+Efree             = -2.77029630e+01 [au]  
+EfreeHarris       = -2.77029753e+01 [au]  
+Ekin              = -2.88899291e+00 [au]  
+Ehart             = -1.39038173e+02 [au]  
+EVxc              = -2.33282120e+01 [au]  
+Exc               = -1.78899337e+01 [au]  
+EVdw              = +0.00000000e+00 [au]  
+Eself             = +1.69290421e+02 [au]  
+EIonSR            = +1.70684424e-316[au]  
+Eext              = +0.00000000e+00 [au]  
+Ecor              = -2.48139701e+01 [au]  
+Fermi             = +8.93179312e-02 [au]  
+Total charge      = +6.40000000e+01 [au]  
+HOMO              = +1.27073790e+00 [eV]  
+LUMO              = +3.59019132e+00 [eV]  
+norm(out-in)/norm(in) = +9.01700904e-07 
+Efree diff per atom   = +1.92851572e-07 
+SCF is converged in 8 steps !
+Time for computing potential mixing in PWDFT is 0.34453121 [s]
+
+Total wall clock time for this SCF iteration = 19.721674 [s]
+Time for computing the local potential contribution of the force is 0.36093513 [s]
+
+Time for computing the nonlocal potential contribution of the force is 6.3874114 [s]
+
+Total time for FFT in the computation of the force is 1.0417686 [s]
+
+
+*********************************************************************
+Energy
+*********************************************************************
+
+NOTE:  Ecor  = Exc - EVxc - Ehart - Eself + EIonSR + EVdw + Eext
+       Etot  = Ekin + Ecor
+       Efree = Etot    + Entropy
+
+! Etot            = -2.77029630e+01 [au]  
+! Efree           = -2.77029630e+01 [au]  
+! EfreeHarris     = -2.77029753e+01 [au]  
+! EVdw            = +0.00000000e+00 [au]  
+Eext              = +0.00000000e+00 [au]  
+! Fermi           = +8.93179312e-02 [au]  
+! HOMO            = +1.27073790e+00 [ev]  
+! LUMO            = +3.59019132e+00 [eV]  
+
+*********************************************************************
+Atomic Force
+*********************************************************************
+
+atom    0    force   +5.83731174e-10 +3.10860115e-10 +1.05312157e-09 
+atom    1    force   +1.09511733e-10 -8.75786887e-10 -1.03729322e-09 
+atom    2    force   +9.74460873e-10 -3.74714846e-10 +1.54816925e-09 
+atom    3    force   -1.23041771e-10 +7.72682534e-10 -1.53613419e-09 
+atom    4    force   -5.38172798e-10 +9.21922400e-10 +5.06372103e-10 
+atom    5    force   -8.40785546e-11 +6.04520961e-10 -4.93163470e-10 
+atom    6    force   -8.96874555e-10 -9.86257385e-10 -1.37511573e-10 
+atom    7    force   +1.53828959e-10 -6.68640826e-10 +1.58830117e-10 
+atom    8    force   +5.39062936e-11 +2.12204698e-11 +2.09181672e-10 
+atom    9    force   -4.89623139e-10 -5.09988746e-10 -2.24643142e-10 
+atom    10   force   +1.36233829e-09 -9.69460736e-11 +8.64222860e-11 
+atom    11   force   -3.18051447e-10 +4.22836753e-10 -8.65850529e-11 
+atom    12   force   -9.94315344e-11 +1.89455451e-10 -2.53441934e-10 
+atom    13   force   +4.64851230e-10 +1.25309654e-09 +2.36346038e-10 
+atom    14   force   -1.42182883e-09 -2.52437445e-10 -9.84098275e-10 
+atom    15   force   +2.78527361e-10 -1.33356941e-09 +9.64136261e-10 
+atom    16   force   -1.07276743e-10 -7.73175131e-10 +8.62532157e-10 
+atom    17   force   -6.89991675e-11 -2.68986145e-10 -8.63385629e-10 
+atom    18   force   +5.14565057e-11 +8.58347497e-10 -3.09161363e-10 
+atom    19   force   +1.69748704e-09 +3.52573813e-10 +2.85671008e-10 
+atom    20   force   +1.74105428e-10 +5.29285869e-10 -6.07384587e-10 
+atom    21   force   +1.08073006e-10 -9.31618999e-11 +5.91880721e-10 
+atom    22   force   +3.98591659e-12 -4.83383843e-10 -9.11201253e-10 
+atom    23   force   -1.64424966e-09 +1.75200033e-10 +9.07403052e-10 
+atom    24   force   -6.77857159e-11 -1.85260849e-10 +9.27790301e-10 
+atom    25   force   +1.40171709e-09 -5.10445357e-11 -9.02196603e-10 
+atom    26   force   -6.84488743e-10 +2.56292522e-10 +1.43472219e-09 
+atom    27   force   -5.54799410e-11 +1.38945968e-10 -1.43320278e-09 
+atom    28   force   +9.49655786e-12 -5.68370653e-10 +8.57280619e-10 
+atom    29   force   -1.44802595e-09 +1.86390070e-10 -8.48213519e-10 
+atom    30   force   +6.00391289e-10 +6.25348107e-10 -2.13401331e-10 
+atom    31   force   +2.79899289e-11 -9.71304684e-11 +2.45059347e-10 
+atom    32   force   +5.34450383e-11 -4.94323501e-11 +1.23687771e-10 
+atom    33   force   +3.00933333e-10 -5.45125805e-11 -1.17716025e-10 
+atom    34   force   +6.80989549e-11 +2.26244516e-11 -1.71458201e-11 
+atom    35   force   +3.58472881e-10 +2.58929496e-11 +2.22913518e-11 
+atom    36   force   -4.00625863e-11 +2.29635000e-10 -2.16852949e-10 
+atom    37   force   -2.91020717e-10 +3.81300304e-10 +2.18523203e-10 
+atom    38   force   -4.83205067e-11 -2.49728099e-10 -3.87116110e-10 
+atom    39   force   -3.45123351e-10 -4.08432087e-10 +3.82182401e-10 
+atom    40   force   +1.79385452e-10 -2.86693910e-10 +5.73501608e-10 
+atom    41   force   -1.24638653e-10 -1.44339170e-10 -5.80291034e-10 
+atom    42   force   +4.93583258e-10 +3.11832158e-10 +5.75640325e-10 
+atom    43   force   +2.42897379e-10 +1.76915246e-10 -5.73837920e-10 
+atom    44   force   -1.61996148e-10 -4.65003326e-11 +2.63175374e-10 
+atom    45   force   +1.38744264e-10 +1.21199297e-10 -2.65987660e-10 
+atom    46   force   -4.68160096e-10 +6.76164688e-11 +1.02775901e-10 
+atom    47   force   -2.34080435e-10 -9.86864555e-11 -1.09672098e-10 
+atom    48   force   -2.18346165e-10 +1.09317637e-10 +5.13793950e-10 
+atom    49   force   +1.22374654e-10 -1.83163092e-10 -5.17813713e-10 
+atom    50   force   +2.20986082e-11 -1.32378087e-10 +5.23512966e-10 
+atom    51   force   +3.92558045e-10 +1.55310140e-10 -5.29810400e-10 
+atom    52   force   +2.05903260e-10 +4.20824753e-10 +2.61451680e-10 
+atom    53   force   -1.31644115e-10 +1.88760053e-10 -2.64586791e-10 
+atom    54   force   -4.45347805e-11 -4.43261932e-10 +2.28539301e-10 
+atom    55   force   -4.07498691e-10 -2.16779968e-10 -2.29817355e-10 
+atom    56   force   +4.16881623e-10 -7.40629614e-11 +1.69170098e-10 
+atom    57   force   +1.07929814e-10 -5.97926467e-11 -1.64941446e-10 
+atom    58   force   +1.41320973e-10 +9.88148310e-11 -1.20009839e-10 
+atom    59   force   -3.28892793e-10 +8.83170961e-11 +1.27282570e-10 
+atom    60   force   -4.41040929e-10 -8.59248170e-11 -1.34889157e-10 
+atom    61   force   -1.18333227e-10 -1.17170620e-10 +1.39328284e-10 
+atom    62   force   -1.59159606e-10 +1.08884696e-10 -3.69355986e-10 
+atom    63   force   +3.15554285e-10 +1.44023598e-10 +3.60903277e-10 
+
+force for centroid  : +5.77916058e-12 +5.33533338e-13 +1.98165363e-11 
+Max force magnitude : +1.88616868e-09 
+
+
+Output the structure information
+! Total time for the SCF iteration = 800.7523 [s]
+Time for Coulomb interaction       = 0.0023721978  [s]
+The Grid of ISDF Nuvc = 530
+The Grid of ISDF Nuvn = 655
+The Grid of ISDF Nunn = 1116
+After Setup: 0.00051157922[s]
+After Initialization: 0.00061542541[s]
+61022 51816 26381 16795 12846 10298 9082 8293 7529 7022 6616 6425 6427 6338 6343 6393 6273 5811 5391 5138 5075 5021 4891 4663 4411 4409 4294 4093 3999 4028 3953 3877 3767 3653 3576 3419 3319 3319 3224 3107 3106 3076 2968 2883 2832 2821 2761 2735 2754 2558 2492 2417 2298 2164 2136 2149 2103 2052 2011 2061 1979 1906 1922 1920 1804 1738 1744 1773 1707 1670 1655 1619 1583 1490 1401 1416 1388 1436 1427 1367 1300 1232 1226 1211 1202 1130 1103 1110 1150 1125 1141 1056 1014 1010 992 964 953 987 986 975 941 954 940 987 958 949 927 871 858 799 766 752 762 726 776 756 766 762 709 687 674 615 646 671 705 700 665 597 576 520 536 502 459 439 425 415 403 357 341 317 348 337 315 325 335 296 314 300 276 265 249 231 223 207 215 207 213 248 222 248 217 192 200 222 237 244 260 248 233 251 204 187 185 198 184 161 146 163 158 167 143 146 146 144 141 146 132 121 129 155 143 179 145 142 148 139 144 141 138 147 128 126 125 111 96 90 92 92 95 87 78 73 78 68 78 57 71 56 52 47 53 60 52 37 40 25 20 18 16 23 18 21 20 24 28 27 27 19 18 18 27 23 24 21 24 21 20 23 22 15 17 16 12 12 16 20 8 6 7 9 13 15 13 22 23 26 26 25 27 21 16 18 20 24 14 16 12 15 18 17 15 16 16 16 14 11 5 8 6 10 8 12 9 13 13 13 11 9 10 11 11 7 7 10 11 8 6 3 2 1 2 3 3 3 4 3 2 0 
+Converged in 318 iterations.
+After iteration: 6.1588068[s]
+Dist time: 2.7957004[s]
+Min time: 3.1455667[s]
+Comm time: 0.010161556[s]
+core0 time: 0.0030277371[s]
+Time for pivQR_ with Kmeans      = 6.1828123 [s]
+Time for psiphiMuCol = 5.2660704e-05 [s]
+Time for C*C^T                   = 0.016116999 [s]
+Time for psiphiMuRowLocal           = 5.697459e-05 [s]
+Time for Pphimu and Pphimu       = 0.041968308 [s]
+Time for Z*C^T                   = 0.025402889 [s]
+Time for Trsm                    = 0.099538706 [s]
+Time for ISDF in GW         = 6.3678838 [s]
+ISDF Time for GEMM in GW         = 0.026411541 [s]
+ISDF Time for MPI in GW         = 0.014037997 [s]
+After Setup: 0.00051167607[s]
+After Initialization: 0.00062101334[s]
+68354 46935 24905 16979 13566 11454 9322 8345 7958 7757 7575 7580 7650 7014 6610 6528 6456 6041 5499 5210 4998 4938 4742 4564 4357 4348 4245 4072 4090 3949 3864 3799 3697 3606 3460 3416 3521 3476 3394 3242 3228 3150 3089 2991 2886 2744 2690 2641 2690 2601 2747 2645 2607 2582 2439 2417 2390 2436 2322 2282 2225 2145 2170 2062 1977 1975 1969 1966 1940 1858 1879 1885 1779 1763 1782 1784 1754 1676 1621 1637 1550 1545 1475 1455 1394 1400 1405 1316 1268 1229 1204 1219 1175 1172 1181 1166 1152 1136 1137 1080 1131 1151 1103 1031 1026 941 949 947 888 885 851 859 895 936 955 879 920 880 911 864 860 915 886 745 789 756 713 735 696 724 738 748 734 667 624 642 601 592 602 611 604 585 569 569 556 531 504 452 459 447 409 377 381 363 369 387 374 368 360 395 390 366 355 336 324 335 356 358 354 342 323 312 326 326 309 302 301 287 261 279 266 274 257 230 226 239 250 262 263 282 278 308 303 281 292 276 263 242 257 241 243 240 244 250 221 256 253 238 249 237 260 259 255 245 244 264 260 243 263 257 243 221 214 212 243 238 241 225 250 270 259 239 247 233 222 238 238 235 229 241 238 215 208 170 184 179 168 149 180 173 143 154 154 176 195 181 181 205 205 199 165 186 172 186 190 195 179 163 155 138 126 130 130 136 142 110 122 143 129 129 138 119 107 114 102 115 105 105 120 120 114 112 96 102 86 75 83 75 73 64 64 71 73 94 91 87 88 81 69 71 67 61 60 66 56 68 55 52 49 58 57 61 62 74 71 64 66 64 84 89 71 51 51 58 48 57 59 54 61 50 44 51 50 44 58 60 58 61 58 66 50 53 36 37 54 56 58 59 63 72 76 87 81 75 65 58 55 49 43 44 37 37 27 33 33 36 27 23 20 11 11 13 13 17 30 26 18 17 14 23 22 29 31 31 28 23 27 35 51 72 89 71 66 60 61 60 49 55 67 62 52 57 50 46 42 47 43 36 28 25 25 40 35 38 46 55 73 76 63 60 65 65 80 67 62 53 59 69 63 60 61 56 53 53 60 54 55 63 49 51 62 62 55 47 41 51 63 75 60 53 48 45 51 40 45 44 58 71 75 59 60 63 65 53 59 52 48 46 57 63 47 31 31 38 42 42 47 37 33 38 27 23 19 23 16 9 6 2 3 2 1 0 
+Converged in 502 iterations.
+After iteration: 11.940331[s]
+Dist time: 5.3081156[s]
+Min time: 6.1517[s]
+Comm time: 0.018232085[s]
+core0 time: 0.0057845935[s]
+Time for pivQR_ with Kmeans      = 11.980541 [s]
+Time for psiphiMuCol = 0.00044681132 [s]
+Time for C*C^T                   = 0.022478789 [s]
+Time for psiphiMuRowLocal           = 0.00014188141 [s]
+Time for Pphimu and Pphimu       = 0.056364946 [s]
+Time for Z*C^T                   = 0.0300337 [s]
+Time for Trsm                    = 0.1531896 [s]
+Time for ISDF in GW         = 12.247634 [s]
+ISDF Time for GEMM in GW         = 0.040378436 [s]
+ISDF Time for MPI in GW         = 0.01679039 [s]
+After Setup: 0.00051689893[s]
+After Initialization: 0.00062654167[s]
+66567 45303 22423 15820 13583 12448 11588 10802 9857 9073 8453 8020 7547 7078 6625 6288 6037 5771 5736 5551 5325 5073 4753 4655 4488 4355 4198 3971 3733 3646 3605 3535 3287 3102 3115 3043 2921 2846 2793 2709 2486 2399 2272 2239 2192 2057 2016 1934 1894 1828 1761 1695 1681 1615 1601 1545 1467 1419 1441 1422 1373 1390 1402 1340 1300 1286 1311 1240 1170 1076 1008 919 862 828 849 828 782 786 818 763 717 686 735 690 658 644 650 611 566 559 514 513 528 530 486 472 478 462 454 446 425 419 436 439 404 423 410 415 388 396 405 379 376 344 321 317 308 301 319 298 258 251 276 302 333 304 290 275 266 249 225 222 208 224 218 224 210 206 216 208 215 207 202 192 173 182 180 192 192 207 209 201 193 179 168 172 163 169 166 173 148 145 152 132 145 135 121 129 113 115 104 122 120 107 104 107 110 119 114 92 95 93 90 82 90 82 76 69 71 68 72 74 70 62 61 63 75 90 83 89 82 81 91 86 100 95 93 103 106 115 95 96 93 87 95 103 89 84 78 79 69 75 60 55 51 53 49 53 56 52 47 48 52 51 59 43 37 34 32 21 16 13 15 8 5 10 10 9 8 3 3 2 4 2 1 1 3 0 
+Converged in 258 iterations.
+After iteration: 10.549467[s]
+Dist time: 4.9444265[s]
+Min time: 5.3471717[s]
+Comm time: 0.014676265[s]
+core0 time: 0.0052106157[s]
+Time for pivQR_ with Kmeans      = 10.645648 [s]
+Time for psiphiMuCol = 0.00013832003 [s]
+Time for C*C^T                   = 0.06027329 [s]
+Time for psiphiMuRowLocal           = 0.00027640164 [s]
+Time for Pphimu and Pphimu       = 0.10512235 [s]
+Time for Z*C^T                   = 0.051968776 [s]
+Time for Trsm                    = 0.40581779 [s]
+Time for ISDF in GW         = 11.27403 [s]
+ISDF Time for GEMM in GW         = 0.077066123 [s]
+ISDF Time for MPI in GW         = 0.05060453 [s]
+Time for  FFTR2C after ISDF       = 0.42314861  [s]
+Time for  Auxiliary wave function      = 0.00010723621  [s]
+Time for  KR_product      = 0.00068470836  [s]
+Time for inverse      = 0.027349725  [s]
+Time for compute vcDcoulvs     = 0.47850042  [s]
+Time for compute vcDcoulss     = 1.0902189  [s]
+Time for compute vsDcoulvs     = 0.58919548  [s]
+Time for compute W1_mu     = 0.086402737  [s]
+Time for compute sigma kernel    = 0.045085654  [s]
+Time for compute sigma    = 0.0078574196  [s]
+
+*********************************************************************
+GW Result
+*********************************************************************
+
+band#    = 0    eigval = -4.51852433e+00 Ex   =  -1.69936644e+01 Esx_x   = +9.18563567e+00 Ech  =  -5.70468914e+00 Vxc =   -9.22066255e+00 Sigma = -1.35127179e+01 Eqp =   -8.81057969e+00 
+band#    = 1    eigval = -2.95763410e+00 Ex   =  -1.47431472e+01 Esx_x   = +7.79966390e+00 Ech  =  -5.55166717e+00 Vxc =   -9.35122813e+00 Sigma = -1.24951505e+01 Eqp =   -6.10155645e+00 
+band#    = 2    eigval = -2.95763409e+00 Ex   =  -1.47170436e+01 Esx_x   = +7.78686943e+00 Ech  =  -5.55281449e+00 Vxc =   -9.35122813e+00 Sigma = -1.24829886e+01 Eqp =   -6.08939458e+00 
+band#    = 3    eigval = -2.95763409e+00 Ex   =  -1.47335622e+01 Esx_x   = +7.79415076e+00 Ech  =  -5.52912838e+00 Vxc =   -9.35122813e+00 Sigma = -1.24685398e+01 Eqp =   -6.07494574e+00 
+band#    = 4    eigval = -2.95763409e+00 Ex   =  -1.47466773e+01 Esx_x   = +7.80315958e+00 Ech  =  -5.55104761e+00 Vxc =   -9.35122813e+00 Sigma = -1.24945653e+01 Eqp =   -6.10097124e+00 
+band#    = 5    eigval = -2.95763408e+00 Ex   =  -1.47551427e+01 Esx_x   = +7.80811789e+00 Ech  =  -5.54268830e+00 Vxc =   -9.35122813e+00 Sigma = -1.24897131e+01 Eqp =   -6.09611909e+00 
+band#    = 6    eigval = -2.95763407e+00 Ex   =  -1.47536992e+01 Esx_x   = +7.80583646e+00 Ech  =  -5.55176778e+00 Vxc =   -9.35122813e+00 Sigma = -1.24996305e+01 Eqp =   -6.10603646e+00 
+band#    = 7    eigval = -1.68445443e+00 Ex   =  -1.36400879e+01 Esx_x   = +7.05256458e+00 Ech  =  -5.24982595e+00 Vxc =   -9.61792041e+00 Sigma = -1.18373492e+01 Eqp =   -3.90388327e+00 
+band#    = 8    eigval = -1.68445442e+00 Ex   =  -1.36225550e+01 Esx_x   = +7.04206438e+00 Ech  =  -5.25368115e+00 Vxc =   -9.61792041e+00 Sigma = -1.18341718e+01 Eqp =   -3.90070582e+00 
+band#    = 9    eigval = -1.68445442e+00 Ex   =  -1.36426120e+01 Esx_x   = +7.05800112e+00 Ech  =  -5.25465443e+00 Vxc =   -9.61792041e+00 Sigma = -1.18392653e+01 Eqp =   -3.90579929e+00 
+band#    = 10   eigval = -1.68445442e+00 Ex   =  -1.36322394e+01 Esx_x   = +7.04667819e+00 Ech  =  -5.24930107e+00 Vxc =   -9.61792041e+00 Sigma = -1.18348623e+01 Eqp =   -3.90139627e+00 
+band#    = 11   eigval = -1.68445442e+00 Ex   =  -1.36432588e+01 Esx_x   = +7.05458644e+00 Ech  =  -5.25294072e+00 Vxc =   -9.61792041e+00 Sigma = -1.18416131e+01 Eqp =   -3.90814710e+00 
+band#    = 12   eigval = -1.68445441e+00 Ex   =  -1.36316648e+01 Esx_x   = +7.04573368e+00 Ech  =  -5.23478071e+00 Vxc =   -9.61792041e+00 Sigma = -1.18207118e+01 Eqp =   -3.88724584e+00 
+band#    = 13   eigval = -1.68445441e+00 Ex   =  -1.36428289e+01 Esx_x   = +7.05120487e+00 Ech  =  -5.26099058e+00 Vxc =   -9.61792041e+00 Sigma = -1.18526146e+01 Eqp =   -3.91914859e+00 
+band#    = 14   eigval = -1.68445441e+00 Ex   =  -1.36373805e+01 Esx_x   = +7.04834624e+00 Ech  =  -5.25576763e+00 Vxc =   -9.61792041e+00 Sigma = -1.18448019e+01 Eqp =   -3.91133590e+00 
+band#    = 15   eigval = -1.68445440e+00 Ex   =  -1.36488449e+01 Esx_x   = +7.06013736e+00 Ech  =  -5.24848415e+00 Vxc =   -9.61792040e+00 Sigma = -1.18371917e+01 Eqp =   -3.90372572e+00 
+band#    = 16   eigval = -1.68445440e+00 Ex   =  -1.36220640e+01 Esx_x   = +7.04394872e+00 Ech  =  -5.25027392e+00 Vxc =   -9.61792040e+00 Sigma = -1.18283892e+01 Eqp =   -3.89492321e+00 
+band#    = 17   eigval = -1.68445440e+00 Ex   =  -1.36281450e+01 Esx_x   = +7.04705926e+00 Ech  =  -5.25050809e+00 Vxc =   -9.61792040e+00 Sigma = -1.18315938e+01 Eqp =   -3.89812784e+00 
+band#    = 18   eigval = -1.68445439e+00 Ex   =  -1.36494626e+01 Esx_x   = +7.05827253e+00 Ech  =  -5.25309941e+00 Vxc =   -9.61792040e+00 Sigma = -1.18442895e+01 Eqp =   -3.91082346e+00 
+band#    = 19   eigval = -1.64122506e+00 Ex   =  -1.36963636e+01 Esx_x   = +7.03095318e+00 Ech  =  -5.09570895e+00 Vxc =   -9.72760402e+00 Sigma = -1.17611194e+01 Eqp =   -3.67474044e+00 
+band#    = 20   eigval = -1.64122506e+00 Ex   =  -1.36898757e+01 Esx_x   = +7.02799573e+00 Ech  =  -5.10836131e+00 Vxc =   -9.72760402e+00 Sigma = -1.17702413e+01 Eqp =   -3.68386231e+00 
+band#    = 21   eigval = -1.64122506e+00 Ex   =  -1.37104729e+01 Esx_x   = +7.03975755e+00 Ech  =  -5.10303656e+00 Vxc =   -9.72760402e+00 Sigma = -1.17737519e+01 Eqp =   -3.68737293e+00 
+band#    = 22   eigval = -1.64122506e+00 Ex   =  -1.37066697e+01 Esx_x   = +7.03710980e+00 Ech  =  -5.10066893e+00 Vxc =   -9.72760402e+00 Sigma = -1.17702288e+01 Eqp =   -3.68384987e+00 
+band#    = 23   eigval = +9.87286507e-01 Ex   =  -1.36525207e+01 Esx_x   = +6.78033391e+00 Ech  =  -4.79423320e+00 Vxc =   -1.08108555e+01 Sigma = -1.16664200e+01 Eqp =   +1.31722010e-01 
+band#    = 24   eigval = +9.87286512e-01 Ex   =  -1.36389563e+01 Esx_x   = +6.77319639e+00 Ech  =  -4.79093345e+00 Vxc =   -1.08108555e+01 Sigma = -1.16566934e+01 Eqp =   +1.41448664e-01 
+band#    = 25   eigval = +9.87286518e-01 Ex   =  -1.36641076e+01 Esx_x   = +6.78709741e+00 Ech  =  -4.79658458e+00 Vxc =   -1.08108555e+01 Sigma = -1.16735948e+01 Eqp =   +1.24547297e-01 
+band#    = 26   eigval = +9.87286519e-01 Ex   =  -1.36580430e+01 Esx_x   = +6.78505521e+00 Ech  =  -4.79833490e+00 Vxc =   -1.08108555e+01 Sigma = -1.16713226e+01 Eqp =   +1.26819406e-01 
+band#    = 27   eigval = +9.87286527e-01 Ex   =  -1.36528410e+01 Esx_x   = +6.78181096e+00 Ech  =  -4.79670348e+00 Vxc =   -1.08108555e+01 Sigma = -1.16677335e+01 Eqp =   +1.30408516e-01 
+band#    = 28   eigval = +9.87286527e-01 Ex   =  -1.36675267e+01 Esx_x   = +6.78728399e+00 Ech  =  -4.79516849e+00 Vxc =   -1.08108555e+01 Sigma = -1.16754112e+01 Eqp =   +1.22730829e-01 
+band#    = 29   eigval = +1.27073790e+00 Ex   =  -1.38509135e+01 Esx_x   = +6.86197136e+00 Ech  =  -4.85614807e+00 Vxc =   -1.09592829e+01 Sigma = -1.18450902e+01 Eqp =   +3.84930601e-01 
+band#    = 30   eigval = +1.27073790e+00 Ex   =  -1.38886222e+01 Esx_x   = +6.87954663e+00 Ech  =  -4.86133266e+00 Vxc =   -1.09592829e+01 Sigma = -1.18704083e+01 Eqp =   +3.59612530e-01 
+band#    = 31   eigval = +1.27073791e+00 Ex   =  -1.38618195e+01 Esx_x   = +6.86928904e+00 Ech  =  -4.86242388e+00 Vxc =   -1.09592829e+01 Sigma = -1.18549544e+01 Eqp =   +3.75066436e-01 
+band#    = 32   eigval = +3.59019133e+00 Ex   =  -3.70871800e+00 Esx_x   = +2.19838621e+00 Ech  =  -3.82024164e+00 Vxc =   -7.46213861e+00 Sigma = -5.33057342e+00 Eqp =   +5.72175652e+00 
+band#    = 33   eigval = +3.59019133e+00 Ex   =  -3.68603679e+00 Esx_x   = +2.18567748e+00 Ech  =  -3.81773162e+00 Vxc =   -7.46213861e+00 Sigma = -5.31809094e+00 Eqp =   +5.73423900e+00 
+band#    = 34   eigval = +3.59019133e+00 Ex   =  -3.68154356e+00 Esx_x   = +2.18297268e+00 Ech  =  -3.81805517e+00 Vxc =   -7.46213861e+00 Sigma = -5.31662606e+00 Eqp =   +5.73570389e+00 
+band#    = 35   eigval = +5.67921052e+00 Ex   =  -3.74581553e+00 Esx_x   = +2.17880353e+00 Ech  =  -3.82563317e+00 Vxc =   -7.60171355e+00 Sigma = -5.39264517e+00 Eqp =   +7.88827890e+00 
+band#    = 36   eigval = +5.67921052e+00 Ex   =  -3.74950092e+00 Esx_x   = +2.17996463e+00 Ech  =  -3.82456722e+00 Vxc =   -7.60171356e+00 Sigma = -5.39410352e+00 Eqp =   +7.88682056e+00 
+band#    = 37   eigval = +5.67921052e+00 Ex   =  -3.74692752e+00 Esx_x   = +2.17822038e+00 Ech  =  -3.83018360e+00 Vxc =   -7.60171356e+00 Sigma = -5.39889074e+00 Eqp =   +7.88203334e+00 
+band#    = 38   eigval = +5.67921052e+00 Ex   =  -3.72745729e+00 Esx_x   = +2.16704522e+00 Ech  =  -3.82155698e+00 Vxc =   -7.60171356e+00 Sigma = -5.38196905e+00 Eqp =   +7.89895503e+00 
+band#    = 39   eigval = +5.89508770e+00 Ex   =  -3.04777996e+00 Esx_x   = +1.69820780e+00 Ech  =  -3.15918890e+00 Vxc =   -7.46579361e+00 Sigma = -4.50876105e+00 Eqp =   +8.85212027e+00 
+band#    = 40   eigval = +5.89508771e+00 Ex   =  -3.05360734e+00 Esx_x   = +1.70148467e+00 Ech  =  -3.15276686e+00 Vxc =   -7.46579361e+00 Sigma = -4.50488953e+00 Eqp =   +8.85599179e+00 
+band#    = 41   eigval = +5.89508771e+00 Ex   =  -3.05649402e+00 Esx_x   = +1.70287493e+00 Ech  =  -3.16496706e+00 Vxc =   -7.46579361e+00 Sigma = -4.51858615e+00 Eqp =   +8.84229518e+00 
+band#    = 42   eigval = +5.89508771e+00 Ex   =  -3.04627247e+00 Esx_x   = +1.69751495e+00 Ech  =  -3.15854966e+00 Vxc =   -7.46579361e+00 Sigma = -4.50730718e+00 Eqp =   +8.85357415e+00 
+band#    = 43   eigval = +5.89508771e+00 Ex   =  -3.03326293e+00 Esx_x   = +1.68812523e+00 Ech  =  -3.15393263e+00 Vxc =   -7.46579361e+00 Sigma = -4.49907033e+00 Eqp =   +8.86181100e+00 
+band#    = 44   eigval = +5.89508772e+00 Ex   =  -3.05609322e+00 Esx_x   = +1.70285232e+00 Ech  =  -3.16025082e+00 Vxc =   -7.46579361e+00 Sigma = -4.51349172e+00 Eqp =   +8.84738961e+00 
+band#    = 45   eigval = +5.89508772e+00 Ex   =  -3.03813156e+00 Esx_x   = +1.69298842e+00 Ech  =  -3.15739007e+00 Vxc =   -7.46579361e+00 Sigma = -4.50253321e+00 Eqp =   +8.85834813e+00 
+band#    = 46   eigval = +5.89508772e+00 Ex   =  -3.05131152e+00 Esx_x   = +1.70061426e+00 Ech  =  -3.16153417e+00 Vxc =   -7.46579361e+00 Sigma = -4.51223143e+00 Eqp =   +8.84864990e+00 
+band#    = 47   eigval = +5.89508772e+00 Ex   =  -3.05250779e+00 Esx_x   = +1.70036138e+00 Ech  =  -3.15733068e+00 Vxc =   -7.46579361e+00 Sigma = -4.50947709e+00 Eqp =   +8.85140425e+00 
+band#    = 48   eigval = +5.89508772e+00 Ex   =  -3.05548640e+00 Esx_x   = +1.70146399e+00 Ech  =  -3.16284784e+00 Vxc =   -7.46579361e+00 Sigma = -4.51687025e+00 Eqp =   +8.84401108e+00 
+band#    = 49   eigval = +5.89508773e+00 Ex   =  -3.04429020e+00 Esx_x   = +1.69613507e+00 Ech  =  -3.15350791e+00 Vxc =   -7.46579361e+00 Sigma = -4.50166304e+00 Eqp =   +8.85921830e+00 
+band#    = 50   eigval = +5.89508773e+00 Ex   =  -3.04906161e+00 Esx_x   = +1.69965173e+00 Ech  =  -3.16044929e+00 Vxc =   -7.46579361e+00 Sigma = -4.50985917e+00 Eqp =   +8.85102217e+00 
+band#    = 51   eigval = +8.18911996e+00 Ex   =  -2.55090831e+00 Esx_x   = +1.32433648e+00 Ech  =  -2.53113568e+00 Vxc =   -7.46571179e+00 Sigma = -3.75770751e+00 Eqp =   +1.18971242e+01 
+band#    = 52   eigval = +8.18911996e+00 Ex   =  -2.54343224e+00 Esx_x   = +1.32027002e+00 Ech  =  -2.53021141e+00 Vxc =   -7.46571179e+00 Sigma = -3.75337362e+00 Eqp =   +1.19014581e+01 
+band#    = 53   eigval = +8.18911996e+00 Ex   =  -2.55249041e+00 Esx_x   = +1.32458598e+00 Ech  =  -2.53231232e+00 Vxc =   -7.46571179e+00 Sigma = -3.76021675e+00 Eqp =   +1.18946150e+01 
+band#    = 54   eigval = +8.18911996e+00 Ex   =  -2.55101392e+00 Esx_x   = +1.32431328e+00 Ech  =  -2.52491819e+00 Vxc =   -7.46571179e+00 Sigma = -3.75161883e+00 Eqp =   +1.19032129e+01 
+band#    = 55   eigval = +8.18911997e+00 Ex   =  -2.53517585e+00 Esx_x   = +1.31573090e+00 Ech  =  -2.53160777e+00 Vxc =   -7.46571179e+00 Sigma = -3.75105271e+00 Eqp =   +1.19037790e+01 
+band#    = 56   eigval = +8.18911997e+00 Ex   =  -2.54932411e+00 Esx_x   = +1.32246679e+00 Ech  =  -2.52906430e+00 Vxc =   -7.46571179e+00 Sigma = -3.75592162e+00 Eqp =   +1.18989101e+01 
+band#    = 57   eigval = +8.18911997e+00 Ex   =  -2.55241589e+00 Esx_x   = +1.32523962e+00 Ech  =  -2.52823940e+00 Vxc =   -7.46571179e+00 Sigma = -3.75541568e+00 Eqp =   +1.18994161e+01 
+band#    = 58   eigval = +8.18911997e+00 Ex   =  -2.54151758e+00 Esx_x   = +1.32001099e+00 Ech  =  -2.52886429e+00 Vxc =   -7.46571179e+00 Sigma = -3.75037088e+00 Eqp =   +1.19044609e+01 
+band#    = 59   eigval = +8.18911997e+00 Ex   =  -2.53885681e+00 Esx_x   = +1.31683872e+00 Ech  =  -2.52823528e+00 Vxc =   -7.46571179e+00 Sigma = -3.75025337e+00 Eqp =   +1.19045784e+01 
+band#    = 60   eigval = +8.18911997e+00 Ex   =  -2.54237574e+00 Esx_x   = +1.31976370e+00 Ech  =  -2.53310516e+00 Vxc =   -7.46571179e+00 Sigma = -3.75571720e+00 Eqp =   +1.18991146e+01 
+band#    = 61   eigval = +8.18911997e+00 Ex   =  -2.54425524e+00 Esx_x   = +1.32163518e+00 Ech  =  -2.52441205e+00 Vxc =   -7.46571179e+00 Sigma = -3.74703211e+00 Eqp =   +1.19077996e+01 
+band#    = 62   eigval = +8.18911997e+00 Ex   =  -2.53317346e+00 Esx_x   = +1.31375360e+00 Ech  =  -2.53432331e+00 Vxc =   -7.46571179e+00 Sigma = -3.75374318e+00 Eqp =   +1.19010886e+01 
+band#    = 63   eigval = +9.26529193e+00 Ex   =  -4.19321929e+00 Esx_x   = +2.09759850e+00 Ech  =  -3.11105773e+00 Vxc =   -8.80075944e+00 Sigma = -5.20667852e+00 Eqp =   +1.28593729e+01 
+band#    = 64   eigval = +9.26529193e+00 Ex   =  -4.20365691e+00 Esx_x   = +2.10421201e+00 Ech  =  -3.10289208e+00 Vxc =   -8.80075944e+00 Sigma = -5.20233699e+00 Eqp =   +1.28637144e+01 
+band#    = 65   eigval = +9.26529193e+00 Ex   =  -4.19338107e+00 Esx_x   = +2.09494674e+00 Ech  =  -3.11057293e+00 Vxc =   -8.80075944e+00 Sigma = -5.20900726e+00 Eqp =   +1.28570441e+01 
+band#    = 66   eigval = +9.26529193e+00 Ex   =  -4.19237124e+00 Esx_x   = +2.09606503e+00 Ech  =  -3.09578109e+00 Vxc =   -8.80075944e+00 Sigma = -5.19208730e+00 Eqp =   +1.28739641e+01 
+band#    = 67   eigval = +9.26529194e+00 Ex   =  -4.19524262e+00 Esx_x   = +2.09967413e+00 Ech  =  -3.10666408e+00 Vxc =   -8.80075944e+00 Sigma = -5.20223257e+00 Eqp =   +1.28638188e+01 
+band#    = 68   eigval = +9.26529194e+00 Ex   =  -4.18895051e+00 Esx_x   = +2.09436696e+00 Ech  =  -3.11152323e+00 Vxc =   -8.80075944e+00 Sigma = -5.20610678e+00 Eqp =   +1.28599446e+01 
+band#    = 69   eigval = +9.26529194e+00 Ex   =  -4.19415329e+00 Esx_x   = +2.09880433e+00 Ech  =  -3.11285037e+00 Vxc =   -8.80075944e+00 Sigma = -5.20819933e+00 Eqp =   +1.28578521e+01 
+band#    = 70   eigval = +9.26529194e+00 Ex   =  -4.19542401e+00 Esx_x   = +2.09787789e+00 Ech  =  -3.10798787e+00 Vxc =   -8.80075944e+00 Sigma = -5.20553399e+00 Eqp =   +1.28605174e+01 
+band#    = 71   eigval = +9.26529194e+00 Ex   =  -4.19398205e+00 Esx_x   = +2.09642318e+00 Ech  =  -3.10632237e+00 Vxc =   -8.80075944e+00 Sigma = -5.20388124e+00 Eqp =   +1.28621701e+01 
+band#    = 72   eigval = +9.26529194e+00 Ex   =  -4.19399230e+00 Esx_x   = +2.09884071e+00 Ech  =  -3.09882549e+00 Vxc =   -8.80075944e+00 Sigma = -5.19397708e+00 Eqp =   +1.28720743e+01 
+band#    = 73   eigval = +9.26529195e+00 Ex   =  -4.19388164e+00 Esx_x   = +2.09658009e+00 Ech  =  -3.10745757e+00 Vxc =   -8.80075944e+00 Sigma = -5.20475912e+00 Eqp =   +1.28612923e+01 
+band#    = 74   eigval = +9.26529195e+00 Ex   =  -4.19720774e+00 Esx_x   = +2.10014242e+00 Ech  =  -3.11125868e+00 Vxc =   -8.80075944e+00 Sigma = -5.20832400e+00 Eqp =   +1.28577274e+01 
+band#    = 75   eigval = +1.13336435e+01 Ex   =  -2.18764146e+00 Esx_x   = +1.06919737e+00 Ech  =  -1.86409547e+00 Vxc =   -7.58462512e+00 Sigma = -2.98253957e+00 Eqp =   +1.59357290e+01 
+band#    = 76   eigval = +1.13336435e+01 Ex   =  -2.17690312e+00 Esx_x   = +1.05988435e+00 Ech  =  -1.86397967e+00 Vxc =   -7.58462512e+00 Sigma = -2.98099844e+00 Eqp =   +1.59372702e+01 
+band#    = 77   eigval = +1.13336435e+01 Ex   =  -2.16847753e+00 Esx_x   = +1.05851490e+00 Ech  =  -1.85813571e+00 Vxc =   -7.58462512e+00 Sigma = -2.96809834e+00 Eqp =   +1.59501703e+01 
+band#    = 78   eigval = +1.13336435e+01 Ex   =  -2.18619056e+00 Esx_x   = +1.07008926e+00 Ech  =  -1.86408721e+00 Vxc =   -7.58462511e+00 Sigma = -2.98018850e+00 Eqp =   +1.59380801e+01 
+band#    = 79   eigval = +1.13336435e+01 Ex   =  -2.16665684e+00 Esx_x   = +1.06038884e+00 Ech  =  -1.85832039e+00 Vxc =   -7.58462511e+00 Sigma = -2.96458839e+00 Eqp =   +1.59536802e+01 
+band#    = 80   eigval = +1.13336435e+01 Ex   =  -2.18686999e+00 Esx_x   = +1.06645003e+00 Ech  =  -1.85831125e+00 Vxc =   -7.58462511e+00 Sigma = -2.97873121e+00 Eqp =   +1.59395374e+01 
+band#    = 81   eigval = +1.15315890e+01 Ex   =  -4.39593075e+00 Esx_x   = +1.92541206e+00 Ech  =  -2.63822628e+00 Vxc =   -9.67655292e+00 Sigma = -5.10874497e+00 Eqp =   +1.60993970e+01 
+band#    = 82   eigval = +1.15315890e+01 Ex   =  -4.41503469e+00 Esx_x   = +1.93741913e+00 Ech  =  -2.63631439e+00 Vxc =   -9.67655292e+00 Sigma = -5.11392994e+00 Eqp =   +1.60942120e+01 
+band#    = 83   eigval = +1.15315890e+01 Ex   =  -4.39657462e+00 Esx_x   = +1.92437173e+00 Ech  =  -2.63740144e+00 Vxc =   -9.67655292e+00 Sigma = -5.10960433e+00 Eqp =   +1.60985376e+01 
+band#    = 84   eigval = +1.15315890e+01 Ex   =  -4.38907359e+00 Esx_x   = +1.91780337e+00 Ech  =  -2.64330144e+00 Vxc =   -9.67655292e+00 Sigma = -5.11457166e+00 Eqp =   +1.60935703e+01 
+band#    = 85   eigval = +1.15315890e+01 Ex   =  -4.38023106e+00 Esx_x   = +1.91403269e+00 Ech  =  -2.64029462e+00 Vxc =   -9.67655292e+00 Sigma = -5.10649299e+00 Eqp =   +1.61016489e+01 
+band#    = 86   eigval = +1.15315890e+01 Ex   =  -4.41438900e+00 Esx_x   = +1.93689385e+00 Ech  =  -2.63775084e+00 Vxc =   -9.67655291e+00 Sigma = -5.11524600e+00 Eqp =   +1.60928959e+01 
+band#    = 87   eigval = +1.24586668e+01 Ex   =  -2.28975994e+00 Esx_x   = +1.11069648e+00 Ech  =  -2.22284077e+00 Vxc =   -7.67408902e+00 Sigma = -3.40190423e+00 Eqp =   +1.67308516e+01 
+band#    = 88   eigval = +1.24586668e+01 Ex   =  -2.29124278e+00 Esx_x   = +1.11144003e+00 Ech  =  -2.22202694e+00 Vxc =   -7.67408902e+00 Sigma = -3.40182969e+00 Eqp =   +1.67309261e+01 
+band#    = 89   eigval = +1.24586668e+01 Ex   =  -2.29658942e+00 Esx_x   = +1.11646581e+00 Ech  =  -2.22805619e+00 Vxc =   -7.67408902e+00 Sigma = -3.40817979e+00 Eqp =   +1.67245760e+01 
+band#    = 90   eigval = +1.24586668e+01 Ex   =  -2.28800225e+00 Esx_x   = +1.11005524e+00 Ech  =  -2.23194116e+00 Vxc =   -7.67408901e+00 Sigma = -3.40988817e+00 Eqp =   +1.67228677e+01 
+band#    = 91   eigval = +1.24586668e+01 Ex   =  -2.28554176e+00 Esx_x   = +1.10942126e+00 Ech  =  -2.22527364e+00 Vxc =   -7.67408901e+00 Sigma = -3.40139414e+00 Eqp =   +1.67313617e+01 
+band#    = 92   eigval = +1.24586668e+01 Ex   =  -2.29634066e+00 Esx_x   = +1.11513673e+00 Ech  =  -2.22527833e+00 Vxc =   -7.67408901e+00 Sigma = -3.40648226e+00 Eqp =   +1.67262736e+01 
+
+the quasiparticle band gap is 5.3466901 eV 
+Total Time for Khatri-Rao product         = 0.00068470836  [s]
+Total Time for FFT         = 0.42314861  [s]
+Total Time for Gemm (nocauchy ISDF)        = 1.9140547  [s]
+Total Time for ISDF Gemm         = 0.1438561  [s]
+Total Time for inverse         = 0.027349725  [s]
+Total Time for MPI (nocauchy ISDF)        = 0.76313026  [s]
+Total Time for MPI       = 0.84456318  [s]
+Total Time for sort         = 3.8146973e-06  [s]
+Total Time for MPI       = 0.84456318  [s]
+Total Time for Gemm         = 2.0579108  [s]
+
+Total time for GW                = 33.588905 [s]
