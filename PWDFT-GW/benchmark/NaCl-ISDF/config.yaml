@@ -1,0 +1,93 @@
+# Si 8 atoms
+# DFT set up
+
+Mixing_Variable:       potential
+Mixing_Type:           broyden #anderson
+#Mixing_Type:           kerker+anderson
+Mixing_StepLength:     0.7
+Mixing_MaxDim:         20
+Temperature:           0
+
+Eig_MaxIter: 	       20
+Eig_Tolerance:         1e-12
+Eig_Min_Tolerance:     1e-9
+SCF_Outer_Tolerance:   1e-8
+SCF_Outer_MaxIter:     100
+
+PW_Solver:             PPCG
+
+PeriodTable:           NaClHGH.bin
+#Pseudo_Type:           ONCV
+
+#begin UPF_File 
+#    H_ONCV_PBE-1.0.upf
+#    O_ONCV_PBE-1.0.upf
+#end UPF_File
+XC_Type:               XC_LDA_XC_TETER93
+
+Ecut_Wavefunction:     40
+#Output_Density:        1
+
+#setup GW
+
+GW:                      1
+Extra_States:            28
+Nv_oper:                 16
+Nc_oper:                28
+Nv_ener:           16
+Nc_ener:          28
+frequency_dependency:   COHSEX
+Coulomb:                Semiconductor
+Coulomb_trunction:      spherical_trunction
+spherical_trunction_radius: 5.0
+Isisdf:         1
+Isdf_method:    Kmeans
+Isrestart: 0
+
+
+Maxiterkmeans_GW_ISDF:    1000
+Tolerancekmeans_GW_ISDF:  1e-5
+Iscauchy:       0
+Vcrank_ratio:   12
+Vsrank_ratio:   12
+Ssrank_ratio:   12
+
+#LRTDDFT set up
+
+#LRTDDFT:               1
+#Extra_States:          10
+#NvBand:                4
+#NcBand:                10
+#
+#LRTDDFT_ISDF:          0
+#NumMuFac_LRTDDFT_ISDF: 4.0
+#NumGaussianRandomFac_LRTDDFT_ISDF: 4.0
+#Tolerance_LRTDDFT:     1e-8
+#
+#IPType_LRTDDFT_ISDF:  Kmeans
+#MaxIterKmeans_LRTDDFT_ISDF: 50
+#ToleranceKmeans_LRTDDFT_ISDF: 1e-5 
+#
+#EigenSolver_LRTDDFT:   ScaLAPACK # LAPACK # ScaLAPACK # LOBPCG
+#NkBand:                10
+#EigMaxIter_LRTDDFT:    100
+##NumProcEigenSolver_LRTDDFT: 128
+#
+#Output_Excitation_Energy: 1
+#Output_Excitation_Wfn   : 0
+
+Super_Cell: [10.75574, 10.75574, 10.75574]
+
+Atom_Types_Num:        2
+Atom_Num:    [4,4]
+Atom_Type:   [11,17]
+
+Atom_Red:
+- [0.000000000, 0.000000000, 0.000000000]
+- [0.000000000, 0.500000000, 0.500000000]
+- [0.500000000, 0.000000000, 0.500000000]
+- [0.500000000, 0.500000000, 0.000000000]
+- [0.500000000, 0.000000000, 0.000000000]
+- [0.500000000, 0.500000000, 0.500000000]
+- [0.000000000, 0.000000000, 0.500000000]
+- [0.000000000, 0.500000000, 0.000000000]
